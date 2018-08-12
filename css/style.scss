@@ -1,0 +1,513 @@
+@font-face {
+  font-family: 'FontAwesome';
+  //in url add your folder path of FontAwsome Fonts
+  src: url('../webfonts/fa-solid-900.ttf') format('truetype');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  overflow-y: scroll;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Garamond', 'Georgia' serif;
+}
+
+h3 {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1em;
+}
+p,
+ul,
+.footer {
+  font-family: 'Tahoma', 'Verdana', sans-serif;
+}
+
+p {
+  font-weight: 300;
+  font-size: 1.1em;
+}
+
+header {
+  width: 100%;
+  background-color: #f2f2f2;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  .bcc {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    height: 70px;
+    box-shadow: 0 2px 5px #cccccc;
+  }
+  .logo {
+    line-height: 70px;
+    font-size: 1.2em;
+    span {
+      padding-left: 80px;
+    }
+  }
+  .logo > img {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  .hidden {
+    display: block;
+  }
+}
+.menu {
+  display: none;
+}
+.lang {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  a {
+    padding: 5px 10px;
+    margin-right: 5px;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+  }
+}
+nav {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: 0;
+  left: 0;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: relative;
+    box-shadow: -1px 0 5px #ccc;
+    li {
+      display: block;
+      text-transform: uppercase;
+      font-weight: 600;
+      ul {
+        box-shadow: 0 0 5px #ccc;
+        li {
+          text-transform: capitalize;
+          a {
+            background-color: #f2f2f2;
+            color: #212121;
+            font-weight: 500;
+            transition: all 0.5s ease;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -ms-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            &:before {
+              font-family: 'FontAwesome';
+              content: ' \f0da';
+              padding-right: 10px;
+            }
+          }
+        }
+      }
+      #club {
+        display: none;
+        &:checked {
+          ~ ul.club_submenu {
+            display: block;
+          }
+          ~ label i {
+            transform: rotate(-180deg);
+            -webkit-transform: rotate(-180deg);
+            -moz-transform: rotate(-180deg);
+            -ms-transform: rotate(-180deg);
+            -o-transform: rotate(-180deg);
+          }
+        }
+      }
+      #schedule {
+        display: none;
+        &:checked {
+          ~ ul.schedule_submenu {
+            display: block;
+          }
+          ~ label i {
+            transform: rotate(-180deg);
+            -webkit-transform: rotate(-180deg);
+            -moz-transform: rotate(-180deg);
+            -ms-transform: rotate(-180deg);
+            -o-transform: rotate(-180deg);
+          }
+        }
+      }
+      label {
+        display: block;
+        padding: 10px 30px;
+        background-color: #ffffff;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        i {
+          transition: all 0.3s ease;
+          -webkit-transition: all 0.3s ease;
+          -moz-transition: all 0.3s ease;
+          -ms-transition: all 0.3s ease;
+          -o-transition: all 0.3s ease;
+        }
+      }
+      a {
+        display: block;
+        text-decoration: none;
+        padding: 10px 30px;
+        background-color: #ffffff;
+        color: #212121;
+        transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+      }
+      ul.club_submenu {
+        display: none;
+      }
+      ul.schedule_submenu {
+        display: none;
+      }
+    }
+  }
+}
+
+.news {
+  margin: 0 auto;
+  width: 90%;
+  padding: 1%;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px #cccccc;
+  .news_image {
+    max-width: 400px;
+    img {
+      width: 100%;
+      float: left;
+      margin-right: 20px;
+      margin-bottom: 10px;
+    }
+  }
+  &:first-child {
+    margin-top: 80px;
+  }
+  &:last-child {
+    margin-bottom: 20px;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f2f2f2;
+  background-color: #212121;
+  box-shadow: -2px 0 5px #000000;
+  height: 180px;
+  .footer_copy {
+    align-self: center;
+    order: 1;
+  }
+  .footer_contact {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    div {
+      margin: 5px;
+      &:first-child {
+        margin-top: 10px;
+      }
+    }
+  }
+  .footer_social {
+    align-self: center;
+    margin: 10px 0;
+    .fb {
+      font-size: 2em;
+      a {
+        color: #f2f2f2;
+        &:hover {
+          text-shadow: 0 0 5px #cccccc;
+        }
+      }
+    }
+  }
+}
+
+.clearfix {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    height: 120px;
+    position: fixed;
+    box-shadow: 0 2px 5px #cccccc;
+    .bcc {
+      height: 120px;
+    }
+    .logo {
+      img {
+        width: 100px;
+        height: 100px;
+      }
+      span {
+        position: relative;
+        top: 0;
+        margin-left: 50px;
+        font-size: 2em;
+      }
+    }
+    .menu {
+      display: block;
+    }
+    .lang {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      position: relative;
+      top: -53px;
+      // padding: 10px;
+      background-color: #ffffff;
+      .lang_btn {
+        // width: 30px;
+      }
+      a {
+        // padding: 10px;
+      }
+    }
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      margin: 0 auto;
+      top: -5px;
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        box-shadow: none;
+        display: flex;
+        li {
+          display: block;
+          text-transform: uppercase;
+          ul {
+            top: 5px;
+            box-shadow: 0 0 5px #ccc;
+            li {
+              text-transform: capitalize;
+              a {
+                background-color: #ffffff;
+                // text-align: center;
+              }
+            }
+          }
+          #club {
+            display: none;
+            &:checked {
+              ~ label {
+                background-color: #f2f2f2;
+                cursor: pointer;
+              }
+              ~ ul.club_submenu {
+                display: block;
+              }
+            }
+          }
+          #schedule {
+            display: none;
+            &:checked {
+              ~ label {
+                background-color: #f2f2f2;
+                cursor: pointer;
+              }
+              ~ ul.schedule_submenu {
+                display: block;
+              }
+            }
+          }
+          label {
+            display: block;
+            padding: 10px 30px;
+            background-color: #ffffff;
+            &:hover {
+              background-color: #f2f2f2;
+              cursor: pointer;
+            }
+          }
+          a {
+            display: block;
+            text-decoration: none;
+            padding: 10px 30px;
+            &:hover {
+              background-color: #f2f2f2;
+            }
+          }
+          ul.club_submenu {
+            display: none;
+          }
+          ul.schedule_submenu {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .news {
+    width: 70%;
+    &:first-child {
+      margin-top: 140px;
+    }
+    &:last-child {
+      margin-bottom: 20px;
+    }
+  }
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100px;
+    .footer_copy {
+      order: 0;
+    }
+    .footer_contact {
+      order: 1;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .wrapper {
+    margin: 0 auto;
+  }
+  header {
+    height: 120px;
+    position: fixed;
+    box-shadow: 0 2px 5px #cccccc;
+    .bcc {
+      height: 120px;
+    }
+    .logo {
+      img {
+        width: 100px;
+        height: 100px;
+      }
+      span {
+        margin-left: 50px;
+        line-height: 120px;
+        font-size: 2em;
+      }
+    }
+    .menu {
+      display: block;
+    }
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      margin: 0 auto;
+      top: -50px;
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        box-shadow: none;
+        display: flex;
+        li {
+          display: block;
+          text-transform: uppercase;
+          ul {
+            top: 5px;
+            box-shadow: 0 0 5px #ccc;
+            li {
+              text-transform: capitalize;
+              a {
+                background-color: #ffffff;
+                // text-align: center;
+              }
+            }
+          }
+          #club {
+            display: none;
+            &:checked {
+              ~ label {
+                background-color: #f2f2f2;
+                cursor: pointer;
+              }
+              ~ ul.club_submenu {
+                display: block;
+              }
+            }
+          }
+          #schedule {
+            display: none;
+            &:checked {
+              ~ label {
+                background-color: #f2f2f2;
+                cursor: pointer;
+              }
+              ~ ul.schedule_submenu {
+                display: block;
+              }
+            }
+          }
+          label {
+            display: block;
+            padding: 10px 30px;
+            background-color: #ffffff;
+            &:hover {
+              background-color: #f2f2f2;
+              cursor: pointer;
+            }
+          }
+          a {
+            display: block;
+            text-decoration: none;
+            &:hover {
+              background-color: #f2f2f2;
+            }
+          }
+          ul.club_submenu {
+            display: none;
+          }
+          ul.schedule_submenu {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .news {
+    width: 50%;
+    &:first-child {
+      margin-top: 140px;
+    }
+    &:last-child {
+      margin-bottom: 20px;
+    }
+  }
+
+  footer {
+    height: 100px;
+  }
+}
