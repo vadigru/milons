@@ -26,7 +26,8 @@ h3 {
 
 p,
 ul,
-.footer {
+td,
+footer {
   font-family: 'Tahoma', 'Verdana', sans-serif;
 }
 
@@ -56,7 +57,7 @@ header .logo {
   font-size: 1.2em;
 }
 header .logo span {
-  padding-left: 80px;
+  padding-left: 75px;
 }
 header .logo > img {
   width: 50px;
@@ -114,7 +115,7 @@ nav ul li ul li {
   text-transform: capitalize;
 }
 nav ul li ul li a {
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   color: #212121;
   font-weight: 500;
   transition: all 0.5s ease;
@@ -131,6 +132,10 @@ nav ul li ul li a:before {
 nav ul li #club {
   display: none;
 }
+nav ul li #club:checked ~ label {
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
 nav ul li #club:checked ~ ul.club_submenu {
   display: block;
 }
@@ -143,6 +148,10 @@ nav ul li #club:checked ~ label i {
 }
 nav ul li #schedule {
   display: none;
+}
+nav ul li #schedule:checked ~ label {
+  background-color: #f2f2f2;
+  cursor: pointer;
 }
 nav ul li #schedule:checked ~ ul.schedule_submenu {
   display: block;
@@ -165,6 +174,9 @@ nav ul li label {
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
 }
+nav ul li label:hover {
+  background-color: #f2f2f2;
+}
 nav ul li label i {
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
@@ -183,6 +195,9 @@ nav ul li a {
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
+}
+nav ul li a:hover {
+  background-color: #f2f2f2;
 }
 nav ul li ul.club_submenu {
   display: none;
@@ -251,7 +266,7 @@ footer .footer_social .fb a {
   color: #f2f2f2;
 }
 footer .footer_social .fb a:hover {
-  text-shadow: 0 0 5px #cccccc;
+  color: #4867AA;
 }
 
 .clearfix {
@@ -293,71 +308,16 @@ footer .footer_social .fb a:hover {
   header nav {
     display: flex;
     justify-content: flex-end;
-    margin: 0 auto;
     top: -5px;
   }
   header nav ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
     box-shadow: none;
     display: flex;
   }
-  header nav ul li {
-    display: block;
-    text-transform: uppercase;
-  }
   header nav ul li ul {
     top: 5px;
-    box-shadow: 0 0 5px #ccc;
-  }
-  header nav ul li ul li {
-    text-transform: capitalize;
-  }
-  header nav ul li ul li a {
-    background-color: #ffffff;
-  }
-  header nav ul li #club {
-    display: none;
-  }
-  header nav ul li #club:checked ~ label {
-    background-color: #f2f2f2;
-    cursor: pointer;
-  }
-  header nav ul li #club:checked ~ ul.club_submenu {
-    display: block;
   }
   header nav ul li #schedule {
-    display: none;
-  }
-  header nav ul li #schedule:checked ~ label {
-    background-color: #f2f2f2;
-    cursor: pointer;
-  }
-  header nav ul li #schedule:checked ~ ul.schedule_submenu {
-    display: block;
-  }
-  header nav ul li label {
-    display: block;
-    padding: 10px 30px;
-    background-color: #ffffff;
-  }
-  header nav ul li label:hover {
-    background-color: #f2f2f2;
-    cursor: pointer;
-  }
-  header nav ul li a {
-    display: block;
-    text-decoration: none;
-    padding: 10px 30px;
-  }
-  header nav ul li a:hover {
-    background-color: #f2f2f2;
-  }
-  header nav ul li ul.club_submenu {
-    display: none;
-  }
-  header nav ul li ul.schedule_submenu {
     display: none;
   }
 
@@ -366,9 +326,6 @@ footer .footer_social .fb a:hover {
   }
   .news:first-child {
     margin-top: 140px;
-  }
-  .news:last-child {
-    margin-bottom: 20px;
   }
 
   footer {
@@ -390,8 +347,6 @@ footer .footer_social .fb a:hover {
 
   header {
     height: 120px;
-    position: fixed;
-    box-shadow: 0 2px 5px #cccccc;
   }
   header .bcc {
     height: 120px;
@@ -401,95 +356,24 @@ footer .footer_social .fb a:hover {
     height: 100px;
   }
   header .logo span {
-    margin-left: 50px;
-    line-height: 120px;
+    line-height: 100px;
     font-size: 2em;
   }
-  header .menu {
-    display: block;
-  }
   header nav {
-    display: flex;
-    justify-content: flex-end;
-    margin: 0 auto;
-    top: -50px;
-  }
-  header nav ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    box-shadow: none;
-    display: flex;
-  }
-  header nav ul li {
-    display: block;
-    text-transform: uppercase;
-  }
-  header nav ul li ul {
-    top: 5px;
-    box-shadow: 0 0 5px #ccc;
-  }
-  header nav ul li ul li {
-    text-transform: capitalize;
-  }
-  header nav ul li ul li a {
-    background-color: #ffffff;
-  }
-  header nav ul li #club {
-    display: none;
-  }
-  header nav ul li #club:checked ~ label {
-    background-color: #f2f2f2;
-    cursor: pointer;
-  }
-  header nav ul li #club:checked ~ ul.club_submenu {
-    display: block;
-  }
-  header nav ul li #schedule {
-    display: none;
-  }
-  header nav ul li #schedule:checked ~ label {
-    background-color: #f2f2f2;
-    cursor: pointer;
-  }
-  header nav ul li #schedule:checked ~ ul.schedule_submenu {
-    display: block;
-  }
-  header nav ul li label {
-    display: block;
-    padding: 10px 30px;
-    background-color: #ffffff;
-  }
-  header nav ul li label:hover {
-    background-color: #f2f2f2;
-    cursor: pointer;
-  }
-  header nav ul li a {
-    display: block;
-    text-decoration: none;
-  }
-  header nav ul li a:hover {
-    background-color: #f2f2f2;
-  }
-  header nav ul li ul.club_submenu {
-    display: none;
-  }
-  header nav ul li ul.schedule_submenu {
-    display: none;
+    top: -30px;
   }
 
   .news {
     width: 50%;
   }
-  .news:first-child {
-    margin-top: 140px;
+}
+@media screen and (min-width: 1395px) {
+  header .logo span {
+    line-height: 100px;
+    font-size: 2em;
   }
-  .news:last-child {
-    margin-bottom: 20px;
-  }
-
-  footer {
-    height: 100px;
+  header nav {
+    top: -30px;
   }
 }
 
