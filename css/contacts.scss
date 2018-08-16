@@ -1,12 +1,13 @@
+@import "var.scss";
 main {
   min-height: calc(100vh - 180px);
   .contacts {
-    width: 90%;
-    background-color: #ffffff;
+    max-width: 800px;
+    background-color: $contentBg;
     margin: 0 auto;
     margin-top: 80px;
     margin-bottom: 20px;
-    box-shadow: 0 0 10px #ccc;
+    box-shadow: $shadow;
     padding: 1%;
     .contacts_bcc {
       margin: 0 auto;
@@ -48,11 +49,11 @@ main {
   .contacts_form {
     .contacts_bcc {
       .contacts_input {
-        width: 90%;
-        background-color: #ffffff;
+        max-width: 800px;
+        background-color: $contentBg;
         margin: 0 auto;
         margin-bottom: 20px;
-        box-shadow: 0 0 10px #ccc;
+        box-shadow: $shadow;
         padding: 1%;
         form {
           font-family: 'Tahoma', sans-serif;
@@ -68,11 +69,11 @@ main {
             margin-bottom: 20px;
             padding: 5px;
             width: 95%;
-            border: 1px solid #ccc;
+            border: 1px solid #888888;
             &:hover,
             &:active,
             &:focus {
-              box-shadow: 0 0 5px #ccc;
+              box-shadow: $shadow;
               outline: none;
             }
           }
@@ -81,11 +82,11 @@ main {
             height: 150px;
             padding: 5px;
             margin-bottom: 10px;
-            border: 1px solid #ccc;
+            border: 1px solid #888888;
             &:hover,
             &:active,
             &:focus {
-              box-shadow: 0 0 5px #ccc;
+              box-shadow: $shadow;
               outline: none;
             }
           }
@@ -95,7 +96,7 @@ main {
             &:hover,
             &:active,
             &:focus {
-              box-shadow: 0 0 10px #cccccc;
+              box-shadow: $shadow;
             }
           }
         }
@@ -108,7 +109,7 @@ main {
   main {
     min-height: calc(100vh - 260px);
     .contacts {
-      width: 70%;
+      // width: 70%;
       margin-top: 140px;
       .contacts_bcc {
         display: flex;
@@ -116,7 +117,7 @@ main {
           width: 70%;
         }
         .contacts_address {
-          width: 60%;
+          // width: 60%;
           margin-left: 20px;
           td:nth-child(odd) {
             font-size: 1em;
@@ -131,7 +132,7 @@ main {
       font-size: 1.3em;
       .contacts_bcc {
         .contacts_input {
-          width: 70%;
+          // width: 70%;
           form {
             input {
               width: 50%;
@@ -154,7 +155,7 @@ main {
   main {
     min-height: calc(100vh - 260px);
     .contacts {
-      width: 50%;
+      // max-width: 800px;
       .contacts_bcc {
         iframe {
           width: 70%;
@@ -164,7 +165,7 @@ main {
     .contacts_form {
       .contacts_bcc {
         .contacts_input {
-          width: 50%;
+          // max-width: 800px;
         }
       }
     }

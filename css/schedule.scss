@@ -1,10 +1,11 @@
+@import "var.scss";
 main {
   min-height: calc(100vh - 180px);
   .schedule {
-    background-color: #ffffff;
-    width: 90%;
+    background-color: $contentBg;
+    max-width: 800px;
     margin: 80px  auto 20px;
-    box-shadow: 0 0 5px #cccccc;
+    box-shadow: $shadow;
     &:nth-child(2) {
       margin-top: 0;
     }
@@ -26,6 +27,9 @@ main {
           }
         }
         tr {
+          &:hover {
+              background-color: lightyellow;
+          }
           td {
             padding: 10px;
             &:nth-child(2) {

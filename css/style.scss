@@ -1,3 +1,4 @@
+@import "var.scss";
 @font-face {
   font-family: 'FontAwesome';
   src: url('../webfonts/fa-solid-900.ttf') format('truetype');
@@ -6,7 +7,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #f2f2f2;
+  background-color: $bodyBgColor;
   overflow-y: scroll;
 }
 h1,
@@ -26,7 +27,8 @@ h3 {
 p,
 ul,
 td,
-footer {
+footer,
+.gallery_content {
   font-family: 'Tahoma', 'Verdana', sans-serif;
 }
 
@@ -37,7 +39,6 @@ p {
 
 header {
   width: 100%;
-  background-color: #f2f2f2;
   height: 50px;
   position: fixed;
   top: 0;
@@ -46,9 +47,9 @@ header {
   .bcc {
     display: flex;
     flex-direction: column;
-    background-color: #ffffff;
+    background-color: $header;
     height: 70px;
-    box-shadow: 0 2px 5px #cccccc;
+    box-shadow: $shadow;
   }
   .logo {
     line-height: 70px;
@@ -74,7 +75,7 @@ header {
 .lang {
   display: flex;
   justify-content: center;
-  background-color: #ffffff;
+  background-color: $header;
   a {
     padding: 5px 10px;
     margin-right: 5px;
@@ -96,17 +97,17 @@ nav {
     padding: 0;
     list-style-type: none;
     position: relative;
-    box-shadow: -1px 0 5px #ccc;
+    box-shadow: $shadow;
     li {
       display: block;
       text-transform: uppercase;
       font-weight: 600;
       ul {
-        box-shadow: 0 0 5px #ccc;
+        box-shadow: $shadow;
         li {
           text-transform: capitalize;
           a {
-            background-color: #ffffff;
+            background-color: $header;
             color: #212121;
             font-weight: 500;
             transition: all 0.5s ease;
@@ -126,7 +127,7 @@ nav {
         display: none;
         &:checked {
           ~ label {
-            background-color: #f2f2f2;
+            background-color: $hoverColor;
             cursor: pointer;
           }
           ~ ul.club_submenu {
@@ -145,7 +146,7 @@ nav {
         display: none;
         &:checked {
           ~ label {
-            background-color: #f2f2f2;
+            background-color: $hoverColor;
             cursor: pointer;
           }
           ~ ul.schedule_submenu {
@@ -163,7 +164,7 @@ nav {
       label {
         display: block;
         padding: 10px 30px;
-        background-color: #ffffff;
+        background-color: $header;
         cursor: pointer;
         transition: all 0.5s ease;
         -webkit-transition: all 0.5s ease;
@@ -171,7 +172,7 @@ nav {
         -ms-transition: all 0.5s ease;
         -o-transition: all 0.5s ease;
         &:hover {
-          background-color: #f2f2f2;
+          background-color: $hoverColor;
         }
         i {
           transition: all 0.3s ease;
@@ -185,7 +186,7 @@ nav {
         display: block;
         text-decoration: none;
         padding: 10px 30px;
-        background-color: #ffffff;
+        background-color: $header;
         color: #212121;
         transition: all 0.5s ease;
         -webkit-transition: all 0.5s ease;
@@ -193,7 +194,7 @@ nav {
         -ms-transition: all 0.5s ease;
         -o-transition: all 0.5s ease;
         &:hover {
-          background-color: #f2f2f2;
+          background-color: $hoverColor;
         }
       }
       ul.club_submenu {
@@ -208,11 +209,11 @@ nav {
 
 .news {
   margin: 0 auto;
-  width: 90%;
+  max-width: 800px;
   padding: 1%;
   margin-bottom: 20px;
-  background-color: #ffffff;
-  box-shadow: 0 0 10px #cccccc;
+  background-color: $contentBg;
+  box-shadow: $shadow;
   .news_image {
     max-width: 400px;
     img {
@@ -235,8 +236,8 @@ footer {
   flex-direction: column;
   align-items: center;
   color: #f2f2f2;
-  background-color: #212121;
-  box-shadow: -2px 0 5px #000000;
+  background-color: $footerColor;
+  box-shadow: $shadow;
   height: 180px;
   .footer_copy {
     align-self: center;
@@ -279,7 +280,7 @@ footer {
   header {
     height: 120px;
     position: fixed;
-    box-shadow: 0 2px 5px #cccccc;
+    box-shadow: $shadow;
     .bcc {
       height: 120px;
     }
@@ -304,7 +305,7 @@ footer {
       flex-direction: column;
       position: relative;
       top: -53px;
-      background-color: #ffffff;
+      background-color: $header;
     }
     nav {
       display: flex;

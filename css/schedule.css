@@ -2,9 +2,9 @@ main {
   min-height: calc(100vh - 180px); }
   main .schedule {
     background-color: #ffffff;
-    width: 90%;
+    max-width: 800px;
     margin: 80px  auto 20px;
-    box-shadow: 0 0 5px #cccccc; }
+    box-shadow: 0 0 5px #3B3838; }
     main .schedule:nth-child(2) {
       margin-top: 0; }
     main .schedule:nth-child(3) {
@@ -20,6 +20,8 @@ main {
           padding: 10px;
           background-color: #f2f2f2;
           box-shadow: 0px 2px 5px #ccc; }
+        main .schedule .schedule_content table tr:hover {
+          background-color: lightyellow; }
         main .schedule .schedule_content table tr td {
           padding: 10px; }
           main .schedule .schedule_content table tr td:nth-child(2) {

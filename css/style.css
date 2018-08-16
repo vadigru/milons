@@ -5,7 +5,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #f2f2f2;
+  background-color: #696969;
   overflow-y: scroll;
 }
 
@@ -27,7 +27,8 @@ h3 {
 p,
 ul,
 td,
-footer {
+footer,
+.gallery_content {
   font-family: 'Tahoma', 'Verdana', sans-serif;
 }
 
@@ -38,7 +39,6 @@ p {
 
 header {
   width: 100%;
-  background-color: #f2f2f2;
   height: 50px;
   position: fixed;
   top: 0;
@@ -48,9 +48,9 @@ header {
 header .bcc {
   display: flex;
   flex-direction: column;
-  background-color: #ffffff;
+  background-color: #f5f5f5;
   height: 70px;
-  box-shadow: 0 2px 5px #cccccc;
+  box-shadow: 0 0 5px #3B3838;
 }
 header .logo {
   line-height: 70px;
@@ -77,7 +77,7 @@ header .hidden {
 .lang {
   display: flex;
   justify-content: center;
-  background-color: #ffffff;
+  background-color: #f5f5f5;
 }
 .lang a {
   padding: 5px 10px;
@@ -101,7 +101,7 @@ nav ul {
   padding: 0;
   list-style-type: none;
   position: relative;
-  box-shadow: -1px 0 5px #ccc;
+  box-shadow: 0 0 5px #3B3838;
 }
 nav ul li {
   display: block;
@@ -109,13 +109,13 @@ nav ul li {
   font-weight: 600;
 }
 nav ul li ul {
-  box-shadow: 0 0 5px #ccc;
+  box-shadow: 0 0 5px #3B3838;
 }
 nav ul li ul li {
   text-transform: capitalize;
 }
 nav ul li ul li a {
-  background-color: #ffffff;
+  background-color: #f5f5f5;
   color: #212121;
   font-weight: 500;
   transition: all 0.5s ease;
@@ -133,7 +133,7 @@ nav ul li #club {
   display: none;
 }
 nav ul li #club:checked ~ label {
-  background-color: #f2f2f2;
+  background-color: #c9c9c9;
   cursor: pointer;
 }
 nav ul li #club:checked ~ ul.club_submenu {
@@ -150,7 +150,7 @@ nav ul li #schedule {
   display: none;
 }
 nav ul li #schedule:checked ~ label {
-  background-color: #f2f2f2;
+  background-color: #c9c9c9;
   cursor: pointer;
 }
 nav ul li #schedule:checked ~ ul.schedule_submenu {
@@ -166,7 +166,7 @@ nav ul li #schedule:checked ~ label i {
 nav ul li label {
   display: block;
   padding: 10px 30px;
-  background-color: #ffffff;
+  background-color: #f5f5f5;
   cursor: pointer;
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
@@ -175,7 +175,7 @@ nav ul li label {
   -o-transition: all 0.5s ease;
 }
 nav ul li label:hover {
-  background-color: #f2f2f2;
+  background-color: #c9c9c9;
 }
 nav ul li label i {
   transition: all 0.3s ease;
@@ -188,7 +188,7 @@ nav ul li a {
   display: block;
   text-decoration: none;
   padding: 10px 30px;
-  background-color: #ffffff;
+  background-color: #f5f5f5;
   color: #212121;
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
@@ -197,7 +197,7 @@ nav ul li a {
   -o-transition: all 0.5s ease;
 }
 nav ul li a:hover {
-  background-color: #f2f2f2;
+  background-color: #c9c9c9;
 }
 nav ul li ul.club_submenu {
   display: none;
@@ -208,11 +208,11 @@ nav ul li ul.schedule_submenu {
 
 .news {
   margin: 0 auto;
-  width: 90%;
+  max-width: 800px;
   padding: 1%;
   margin-bottom: 20px;
   background-color: #ffffff;
-  box-shadow: 0 0 10px #cccccc;
+  box-shadow: 0 0 5px #3B3838;
 }
 .news .news_image {
   max-width: 400px;
@@ -235,8 +235,8 @@ footer {
   flex-direction: column;
   align-items: center;
   color: #f2f2f2;
-  background-color: #212121;
-  box-shadow: -2px 0 5px #000000;
+  background-color: #404040;
+  box-shadow: 0 0 5px #3B3838;
   height: 180px;
 }
 footer .footer_copy {
@@ -279,7 +279,7 @@ footer .footer_social .fb a:hover {
   header {
     height: 120px;
     position: fixed;
-    box-shadow: 0 2px 5px #cccccc;
+    box-shadow: 0 0 5px #3B3838;
   }
   header .bcc {
     height: 120px;
@@ -303,7 +303,7 @@ footer .footer_social .fb a:hover {
     flex-direction: column;
     position: relative;
     top: -53px;
-    background-color: #ffffff;
+    background-color: #f5f5f5;
   }
   header nav {
     display: flex;
