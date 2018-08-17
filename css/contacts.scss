@@ -9,6 +9,7 @@ main {
     margin-bottom: 20px;
     box-shadow: $shadow;
     padding: 1%;
+    border-radius: $radius;
     .contacts_bcc {
       margin: 0 auto;
       font-family: 'Tahoma', 'Verdana', sans-serif;
@@ -35,7 +36,7 @@ main {
           height: 30px;
         }
         tr:nth-child(even) {
-          background-color: #f2f2f2;
+          background-color: $tableLine;
         }
         td:nth-child(odd) {
           font-size: 0.9em;
@@ -49,6 +50,7 @@ main {
   .contacts_form {
     .contacts_bcc {
       .contacts_input {
+        border-radius: $radius;
         max-width: 800px;
         background-color: $contentBg;
         margin: 0 auto;
@@ -57,7 +59,6 @@ main {
         padding: 1%;
         form {
           font-family: 'Tahoma', sans-serif;
-          font-size: 0.9em;
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -69,7 +70,9 @@ main {
             margin-bottom: 20px;
             padding: 5px;
             width: 95%;
-            border: 1px solid #888888;
+            border: none;
+            border-radius: 5px;
+            font-size: 0.9em;
             &:hover,
             &:active,
             &:focus {
@@ -82,7 +85,9 @@ main {
             height: 150px;
             padding: 5px;
             margin-bottom: 10px;
-            border: 1px solid #888888;
+            border: none;
+            border-radius: 5px;
+            font-size: 0.9em;
             &:hover,
             &:active,
             &:focus {
@@ -93,10 +98,12 @@ main {
           #submit {
             width: 30%;
             cursor: pointer;
+            background-color: $tableLine;
             &:hover,
             &:active,
             &:focus {
               box-shadow: $shadow;
+              background-color: $hoverColor;
             }
           }
         }
@@ -136,12 +143,12 @@ main {
           form {
             input {
               width: 50%;
-              font-size: 1em;
+              font-size: 0.85em;
               padding: 10px;
             }
             textarea {
               width: 50%;
-              font-size: 1.3em;
+              font-size: 0.85em;
               padding: 10px;
             }
           }

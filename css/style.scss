@@ -10,6 +10,7 @@ body {
   background-color: $bodyBgColor;
   overflow-y: scroll;
 }
+
 h1,
 h2,
 h3,
@@ -24,17 +25,19 @@ h3 {
   font-weight: 300;
   font-size: 1em;
 }
+
 p,
 ul,
 td,
 footer,
-.gallery_content {
+.gallery_content,
+textarea {
   font-family: 'Tahoma', 'Verdana', sans-serif;
 }
 
 p {
   font-weight: 300;
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
 
 header {
@@ -58,7 +61,7 @@ header {
       padding-left: 75px;
     }
   }
-  .logo > img {
+  .logo>img {
     width: 50px;
     height: 50px;
     position: absolute;
@@ -69,15 +72,17 @@ header {
     display: block;
   }
 }
+
 .menu {
   display: none;
 }
+
 .lang {
   display: flex;
   justify-content: center;
   background-color: $header;
   a {
-    padding: 5px 10px;
+    padding: 6px 10px;
     margin-right: 5px;
     transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
@@ -86,12 +91,15 @@ header {
     -o-transition: all 0.5s ease;
   }
 }
+
 nav {
   display: block;
   margin: 0 auto;
   position: relative;
   top: 0;
   left: 0;
+  font-size: 0.9em;
+  font-weight: 600;
   ul {
     margin: 0;
     padding: 0;
@@ -101,7 +109,6 @@ nav {
     li {
       display: block;
       text-transform: uppercase;
-      font-weight: 600;
       ul {
         box-shadow: $shadow;
         li {
@@ -126,14 +133,15 @@ nav {
       #club {
         display: none;
         &:checked {
-          ~ label {
-            background-color: $hoverColor;
+          ~label {
+            // background-color: $hoverColor;
+            color: $hoverColor;
             cursor: pointer;
           }
-          ~ ul.club_submenu {
+          ~ul.club_submenu {
             display: block;
           }
-          ~ label i {
+          ~label i {
             transform: rotate(-180deg);
             -webkit-transform: rotate(-180deg);
             -moz-transform: rotate(-180deg);
@@ -145,14 +153,15 @@ nav {
       #schedule {
         display: none;
         &:checked {
-          ~ label {
-            background-color: $hoverColor;
+          ~label {
+            // background-color: $hoverColor;
+            color: $hoverColor;
             cursor: pointer;
           }
-          ~ ul.schedule_submenu {
+          ~ul.schedule_submenu {
             display: block;
           }
-          ~ label i {
+          ~label i {
             transform: rotate(-180deg);
             -webkit-transform: rotate(-180deg);
             -moz-transform: rotate(-180deg);
@@ -172,7 +181,8 @@ nav {
         -ms-transition: all 0.5s ease;
         -o-transition: all 0.5s ease;
         &:hover {
-          background-color: $hoverColor;
+          // background-color: $hoverColor;
+          color: $hoverColor;
         }
         i {
           transition: all 0.3s ease;
@@ -194,7 +204,8 @@ nav {
         -ms-transition: all 0.5s ease;
         -o-transition: all 0.5s ease;
         &:hover {
-          background-color: $hoverColor;
+          // background-color: $hoverColor;
+          color: $hoverColor;
         }
       }
       ul.club_submenu {
@@ -214,6 +225,7 @@ nav {
   margin-bottom: 20px;
   background-color: $contentBg;
   box-shadow: $shadow;
+  border-radius: $radius;
   .news_image {
     max-width: 400px;
     img {
@@ -326,7 +338,7 @@ footer {
     }
   }
   .news {
-    width: 70%;
+    // width: 70%;
     &:first-child {
       margin-top: 140px;
     }
@@ -368,7 +380,7 @@ footer {
     }
   }
   .news {
-    width: 50%;
+    // width: 50%;
   }
 }
 
@@ -385,4 +397,3 @@ footer {
     }
   }
 }
-

@@ -5,7 +5,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #696969;
+  background-color: #ffffff;
   overflow-y: scroll;
 }
 
@@ -28,13 +28,14 @@ p,
 ul,
 td,
 footer,
-.gallery_content {
+.gallery_content,
+textarea {
   font-family: 'Tahoma', 'Verdana', sans-serif;
 }
 
 p {
   font-weight: 300;
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
 
 header {
@@ -80,7 +81,7 @@ header .hidden {
   background-color: #f5f5f5;
 }
 .lang a {
-  padding: 5px 10px;
+  padding: 6px 10px;
   margin-right: 5px;
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
@@ -95,6 +96,8 @@ nav {
   position: relative;
   top: 0;
   left: 0;
+  font-size: 0.9em;
+  font-weight: 600;
 }
 nav ul {
   margin: 0;
@@ -106,7 +109,6 @@ nav ul {
 nav ul li {
   display: block;
   text-transform: uppercase;
-  font-weight: 600;
 }
 nav ul li ul {
   box-shadow: 0 0 5px #3B3838;
@@ -133,7 +135,7 @@ nav ul li #club {
   display: none;
 }
 nav ul li #club:checked ~ label {
-  background-color: #c9c9c9;
+  color: #41A7E1;
   cursor: pointer;
 }
 nav ul li #club:checked ~ ul.club_submenu {
@@ -150,7 +152,7 @@ nav ul li #schedule {
   display: none;
 }
 nav ul li #schedule:checked ~ label {
-  background-color: #c9c9c9;
+  color: #41A7E1;
   cursor: pointer;
 }
 nav ul li #schedule:checked ~ ul.schedule_submenu {
@@ -175,7 +177,7 @@ nav ul li label {
   -o-transition: all 0.5s ease;
 }
 nav ul li label:hover {
-  background-color: #c9c9c9;
+  color: #41A7E1;
 }
 nav ul li label i {
   transition: all 0.3s ease;
@@ -197,7 +199,7 @@ nav ul li a {
   -o-transition: all 0.5s ease;
 }
 nav ul li a:hover {
-  background-color: #c9c9c9;
+  color: #41A7E1;
 }
 nav ul li ul.club_submenu {
   display: none;
@@ -211,8 +213,9 @@ nav ul li ul.schedule_submenu {
   max-width: 800px;
   padding: 1%;
   margin-bottom: 20px;
-  background-color: #ffffff;
+  background-color: #f5f5f5;
   box-shadow: 0 0 5px #3B3838;
+  border-radius: 5px;
 }
 .news .news_image {
   max-width: 400px;
@@ -321,9 +324,6 @@ footer .footer_social .fb a:hover {
     display: none;
   }
 
-  .news {
-    width: 70%;
-  }
   .news:first-child {
     margin-top: 140px;
   }
@@ -361,10 +361,6 @@ footer .footer_social .fb a:hover {
   }
   header nav {
     top: -30px;
-  }
-
-  .news {
-    width: 50%;
   }
 }
 @media screen and (min-width: 1395px) {

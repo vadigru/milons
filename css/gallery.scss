@@ -7,19 +7,23 @@ main {
     background-color: $contentBg;
     max-width: 800px;
     box-shadow: $shadow;
+    padding: 1%;
+    border-radius: $radius;
     .gallery_content {
-      padding: 10px;
+      // padding: 10px;
       margin: 0 auto;
       img {
         width: 100%;
+        border-radius: $radius;
       }
     }
     .gallery_content_sml {
-      padding: 10px;
+      // padding: 10px;
       .thumb {
         padding: 5px;
         img {
           width: 100%;
+          border-radius: $radius;
         }
       }
     }
@@ -34,16 +38,15 @@ main {
       margin-top: 140px;
       margin-bottom: 20px;
       background-color: $contentBg;
-      max-width: 800px;
       .gallery_content {
-        padding: 10px;
+        // padding: 10px;
         margin: 0 auto;
         img {
           width: 100%;
         }
       }
       .gallery_content_sml {
-        padding: 10px;
+        // padding: 10px;
         .thumb {
           // max-width: 200px;
           padding: 5px;

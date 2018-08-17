@@ -1,0 +1,45 @@
+@import "var.scss";
+main {
+  min-height: calc(100vh - 180px);
+  .coach {
+    max-width: 800px;
+    margin: 80px auto 20px;
+    background-color: $contentBg;
+    padding: 1%;
+    border-radius: $radius;
+    .coach_content {
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .coach_image {
+        img {
+          border-radius: 5px;
+          // box-shadow: $shadow;
+        }
+      }
+      .coach_text {
+        h4 {
+          text-align: center;
+          font-size: 2em;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  main {
+    min-height: calc(100vh - 230px);
+    .coach {
+      margin: 140px auto 20px;
+      box-shadow: $shadow;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  main {
+    min-height: calc(100vh - 230px);
+  }
+}

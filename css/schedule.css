@@ -1,40 +1,39 @@
 main {
   min-height: calc(100vh - 180px); }
   main .schedule {
-    background-color: #ffffff;
+    background-color: #f5f5f5;
     max-width: 800px;
     margin: 80px  auto 20px;
-    box-shadow: 0 0 5px #3B3838; }
+    box-shadow: 0 0 5px #3B3838;
+    padding: 1%;
+    border-radius: 5px; }
     main .schedule:nth-child(2) {
       margin-top: 0; }
     main .schedule:nth-child(3) {
       margin-top: 0; }
-    main .schedule .schedule_content {
-      padding: 1%; }
-      main .schedule .schedule_content table {
-        width: 100%;
-        border: 0;
-        border-collapse: collapse; }
-        main .schedule .schedule_content table thead td {
-          text-align: center;
-          padding: 10px;
-          background-color: #f2f2f2;
-          box-shadow: 0px 2px 5px #ccc; }
-        main .schedule .schedule_content table tr:hover {
-          background-color: lightyellow; }
-        main .schedule .schedule_content table tr td {
-          padding: 10px; }
-          main .schedule .schedule_content table tr td:nth-child(2) {
-            text-align: right; }
-      main .schedule .schedule_content tr:nth-child(even) {
-        background-color: #f2f2f2; }
+    main .schedule .schedule_content table {
+      width: 100%;
+      border: 0;
+      border-collapse: collapse; }
+      main .schedule .schedule_content table thead td {
+        text-align: center;
+        padding: 10px;
+        background-color: #c9c9c9;
+        border-bottom: 1px solid #212121; }
+      main .schedule .schedule_content table tr:hover {
+        background-color: #41A7E1; }
+      main .schedule .schedule_content table tr td {
+        padding: 10px; }
+        main .schedule .schedule_content table tr td:nth-child(2) {
+          text-align: right; }
+    main .schedule .schedule_content tr:nth-child(even) {
+      background-color: #c9c9c9; }
 
 @media screen and (min-width: 1024px) {
   main {
     min-height: calc(100vh - 100px);
     font-size: 1.2em; }
     main .schedule {
-      width: 60%;
       margin: 140px  auto 20px; }
       main .schedule .schedule_content table tr td {
         padding: 10px 10% 10px; } }

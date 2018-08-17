@@ -2,12 +2,13 @@ main {
   min-height: calc(100vh - 180px); }
   main .contacts {
     max-width: 800px;
-    background-color: #ffffff;
+    background-color: #f5f5f5;
     margin: 0 auto;
     margin-top: 80px;
     margin-bottom: 20px;
     box-shadow: 0 0 5px #3B3838;
-    padding: 1%; }
+    padding: 1%;
+    border-radius: 5px; }
     main .contacts .contacts_bcc {
       margin: 0 auto;
       font-family: 'Tahoma', 'Verdana', sans-serif; }
@@ -28,21 +29,21 @@ main {
           font-weight: 600;
           height: 30px; }
         main .contacts .contacts_bcc .contacts_address tr:nth-child(even) {
-          background-color: #f2f2f2; }
+          background-color: #c9c9c9; }
         main .contacts .contacts_bcc .contacts_address td:nth-child(odd) {
           font-size: 0.9em; }
         main .contacts .contacts_bcc .contacts_address td:nth-child(even) {
           font-size: 0.8em; }
   main .contacts_form .contacts_bcc .contacts_input {
+    border-radius: 5px;
     max-width: 800px;
-    background-color: #ffffff;
+    background-color: #f5f5f5;
     margin: 0 auto;
     margin-bottom: 20px;
     box-shadow: 0 0 5px #3B3838;
     padding: 1%; }
     main .contacts_form .contacts_bcc .contacts_input form {
       font-family: 'Tahoma', sans-serif;
-      font-size: 0.9em;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -53,7 +54,9 @@ main {
         margin-bottom: 20px;
         padding: 5px;
         width: 95%;
-        border: 1px solid #888888; }
+        border: none;
+        border-radius: 5px;
+        font-size: 0.9em; }
         main .contacts_form .contacts_bcc .contacts_input form input:hover, main .contacts_form .contacts_bcc .contacts_input form input:active, main .contacts_form .contacts_bcc .contacts_input form input:focus {
           box-shadow: 0 0 5px #3B3838;
           outline: none; }
@@ -62,15 +65,19 @@ main {
         height: 150px;
         padding: 5px;
         margin-bottom: 10px;
-        border: 1px solid #888888; }
+        border: none;
+        border-radius: 5px;
+        font-size: 0.9em; }
         main .contacts_form .contacts_bcc .contacts_input form textarea:hover, main .contacts_form .contacts_bcc .contacts_input form textarea:active, main .contacts_form .contacts_bcc .contacts_input form textarea:focus {
           box-shadow: 0 0 5px #3B3838;
           outline: none; }
       main .contacts_form .contacts_bcc .contacts_input form #submit {
         width: 30%;
-        cursor: pointer; }
+        cursor: pointer;
+        background-color: #c9c9c9; }
         main .contacts_form .contacts_bcc .contacts_input form #submit:hover, main .contacts_form .contacts_bcc .contacts_input form #submit:active, main .contacts_form .contacts_bcc .contacts_input form #submit:focus {
-          box-shadow: 0 0 5px #3B3838; }
+          box-shadow: 0 0 5px #3B3838;
+          background-color: #41A7E1; }
 
 @media screen and (min-width: 1024px) {
   main {
@@ -91,11 +98,11 @@ main {
       font-size: 1.3em; }
       main .contacts_form .contacts_bcc .contacts_input form input {
         width: 50%;
-        font-size: 1em;
+        font-size: 0.85em;
         padding: 10px; }
       main .contacts_form .contacts_bcc .contacts_input form textarea {
         width: 50%;
-        font-size: 1.3em;
+        font-size: 0.85em;
         padding: 10px; } }
 @media screen and (min-width: 1280px) {
   main {
