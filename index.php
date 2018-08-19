@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +7,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/club.css">
   <link rel="stylesheet" href="css/fontawesome-all.css">
   <link rel="icon" type="image/png" href="img/icon.png">
   <title>Борцовский клуб "Милонс"</title>
@@ -34,7 +32,7 @@
                 </label>
                 <ul class="club_submenu">
                   <li>
-                    <a href="#" class="menu_btn">Клуб</a>
+                    <a href="club.html" class="menu_btn">Клуб</a>
                   </li>
                   <li>
                     <a href="coach.html" class="menu_btn">Тренер</a>
@@ -82,15 +80,36 @@
     </header>
 
     <main>
-     <div class="club">
-       <div class="club_content">
-         <div class="club_image"><img src="img/wrestling.png" alt="Борцовский клуб Милонс"> </div>
-         <div class="club_text">
-           <h4>"Милонс"</h4>
-           <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).</p>
-         </div>
-       </div>
-     </div>
+    <?php
+    $link = mysqli_connect('localhost', 'admin1', 'password1', 'milonsdb') or
+        die("Ошибка " . mysqli_error($link));
+
+    $query = "SELECT * FROM news";
+    $result = mysqli_query($link, $query) or
+        die("Ошибка " . mysqli_error($link));
+    $row = mysqli_fetch_assoc($result);
+    ?>
+    <?php if ($result) {
+        do { ?>
+      <article class="news clearfix">
+
+        <h1>
+          <?php echo $row['title']; ?>
+        </h1>
+        <h3>
+          <?php echo $row['date']; ?>
+        </h3>
+        <div class="news_image">
+          <?php echo $row['image']; ?>
+        </div>
+        <p class="anot">
+          <?php echo $row['text']; ?>
+        </p>
+
+
+      </article>
+      <?php } while ($row = mysqli_fetch_assoc($result));
+    } ?>
     </main>
 
     <footer>

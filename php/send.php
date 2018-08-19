@@ -45,6 +45,8 @@ if(isset($_POST['submit'])){
 <!--Переадресация на главную страницу сайта, через 3 секунды-->
 
 <script language="JavaScript" type="text/javascript">
-    function changeurl(){eval(self.location="https://app-1526323120.000webhostapp.com/milons/");}
+    function changeurl() {
+        eval(self.location="https://app-1526323120.000webhostapp.com/milons/");
+    }
     window.setTimeout("changeurl();",3000);
 </script>

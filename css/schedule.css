@@ -6,7 +6,7 @@ main {
     margin: 80px  auto 20px;
     box-shadow: 0 0 5px #3B3838;
     padding: 1%;
-    border-radius: 5px; }
+    border-radius: 0; }
     main .schedule:nth-child(2) {
       margin-top: 0; }
     main .schedule:nth-child(3) {

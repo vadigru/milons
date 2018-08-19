@@ -1,5 +1,5 @@
-let img = document.querySelector(`.logo>img`);
-let menu = document.querySelector(`.menu`);
+let img = document.querySelector(".logo>img");
+let menu = document.querySelector(".menu");
 let wrapper = document.querySelector(`.wrapper`);
 
 wrapper.addEventListener(`click`, function (evt) {

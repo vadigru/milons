@@ -8,21 +8,21 @@ main .gallery {
   max-width: 800px;
   box-shadow: 0 0 5px #3B3838;
   padding: 1%;
-  border-radius: 5px;
+  border-radius: 0;
 }
 main .gallery .gallery_content {
   margin: 0 auto;
 }
 main .gallery .gallery_content img {
   width: 100%;
-  border-radius: 5px;
+  border-radius: 0;
 }
 main .gallery .gallery_content_sml .thumb {
   padding: 5px;
 }
 main .gallery .gallery_content_sml .thumb img {
   width: 100%;
-  border-radius: 5px;
+  border-radius: 0;
 }
 
 @media screen and (min-width: 1024px) {

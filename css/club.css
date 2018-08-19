@@ -6,7 +6,7 @@ main .club {
   margin: 80px auto 20px;
   background-color: #f5f5f5;
   padding: 1%;
-  border-radius: 5px;
+  border-radius: 0;
 }
 main .club .club_content {
   display: flex;
