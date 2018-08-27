@@ -1,10 +1,10 @@
 @import "var.scss";
 main {
-  min-height: calc(100vh - 180px);
+  min-height: calc(100vh - 270px);
   .schedule {
     background-color: $contentBg;
     max-width: 800px;
-    margin: 80px  auto 20px;
+    margin: 80px  auto 10px;
     box-shadow: $shadow;
     padding: 1%;
     border-radius: $radius;
@@ -56,7 +56,7 @@ main {
     font-size: 1.2em;
     .schedule {
       // width: 60%;
-      margin: 140px  auto 20px;
+      margin: 190px  auto 10px;
       .schedule_content {
         table {
           tr {

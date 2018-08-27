@@ -42,7 +42,7 @@ p {
 
 header {
   width: 100%;
-  height: 50px;
+  height: 200px;
   position: fixed;
   top: 0;
   left: 0;
@@ -58,13 +58,15 @@ header {
     line-height: 70px;
     font-size: 1.2em;
     span {
-      padding-left: 75px;
+      padding-left: 20px;
+      position: relative;
+      top: -7px;
     }
   }
   .logo>img {
     width: 50px;
     height: 50px;
-    position: absolute;
+    position: relative;
     top: 10px;
     left: 10px;
   }
@@ -96,7 +98,7 @@ nav {
   display: block;
   margin: 0 auto;
   position: relative;
-  top: 0;
+  top: -9px;
   left: 0;
   font-size: 0.9em;
   font-weight: 600;
@@ -128,13 +130,20 @@ nav {
               padding-right: 10px;
             }
           }
+          &:last-child {
+            a {
+              border-bottom-left-radius: $radius;
+              border-bottom-right-radius: $radius;
+            }
+          }
         }
       }
       #club {
         display: none;
         &:checked {
           ~label {
-            // background-color: $hoverColor;
+            background-color: $hoverColor;
+            background-color: $header;
             color: $hoverColor;
             cursor: pointer;
           }
@@ -154,7 +163,8 @@ nav {
         display: none;
         &:checked {
           ~label {
-            // background-color: $hoverColor;
+            background-color: $hoverColor;
+            background-color: $header;
             color: $hoverColor;
             cursor: pointer;
           }
@@ -222,7 +232,7 @@ nav {
   margin: 0 auto;
   max-width: 800px;
   padding: 1%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   background-color: $contentBg;
   box-shadow: $shadow;
   border-radius: $radius;
@@ -239,7 +249,7 @@ nav {
     margin-top: 80px;
   }
   &:last-child {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 }
 
@@ -290,21 +300,22 @@ footer {
 
 @media screen and (min-width: 1024px) {
   header {
-    height: 120px;
+    height: 180px;
     position: fixed;
     box-shadow: $shadow;
     .bcc {
-      height: 120px;
+      height: 180px;
     }
     .logo {
+      text-align: center;
       img {
+        // margin-left: 130px;
         width: 100px;
         height: 100px;
       }
       span {
         position: relative;
-        top: 0;
-        margin-left: 50px;
+        top: -20px;
         font-size: 2em;
       }
     }
@@ -314,24 +325,28 @@ footer {
     .lang {
       display: flex;
       justify-content: center;
-      flex-direction: column;
+      flex-direction: row;
       position: relative;
-      top: -53px;
-      background-color: $header;
+      top: 4px;
+      background-color: transparent;
     }
     nav {
       display: flex;
-      justify-content: flex-end;
-      top: -5px;
+      justify-content: center;
+      // top: 0px;
       ul {
         box-shadow: none;
         display: flex;
+
         li {
-          ul {
-            top: 5px;
-          }
           #schedule {
             display: none;
+          }
+          label {
+            background-color: transparent;
+          }
+          a {
+            background-color: transparent;
           }
         }
       }
@@ -340,7 +355,7 @@ footer {
   .news {
     // width: 70%;
     &:first-child {
-      margin-top: 140px;
+      margin-top: 190px;
     }
   }
   footer {
@@ -356,44 +371,43 @@ footer {
   }
 }
 
-@media screen and (min-width: 1280px) {
-  .wrapper {
-    margin: 0 auto;
-  }
-  header {
-    height: 120px;
-    .bcc {
-      height: 120px;
-    }
-    .logo {
-      img {
-        width: 100px;
-        height: 100px;
-      }
-      span {
-        line-height: 100px;
-        font-size: 2em;
-      }
-    }
-    nav {
-      top: -30px;
-    }
-  }
-  .news {
-    // width: 50%;
-  }
-}
+// @media screen and (min-width: 1280px) {
+//   .wrapper {
+//     margin: 0 auto;
+//   }
+//   header {
+//     height: 180px;
+//     .bcc {
+//       height: 180px;
+//     }
+//     .logo {
+//       img {
+//         width: 100px;
+//         height: 100px;
+//       }
+//       span {
+//         font-size: 2em;
+//       }
+//     }
+//     nav {
+//       // top: px;
+//     }
+//   }
+//   .news {
+//     // width: 50%;
+//   }
+// }
 
-@media screen and (min-width: 1395px) {
-  header {
-    .logo {
-      span {
-        line-height: 100px;
-        font-size: 2em;
-      }
-    }
-    nav {
-      top: -30px;
-    }
-  }
-}
+// @media screen and (min-width: 1395px) {
+//   header {
+//     .logo {
+//       span {
+//         // line-height: 180px;
+//         font-size: 2em;
+//       }
+//     }
+//     nav {
+//       // top: 0px;
+//     }
+//   }
+// }

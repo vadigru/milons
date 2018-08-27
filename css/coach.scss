@@ -1,14 +1,13 @@
 @import "var.scss";
 main {
-  min-height: calc(100vh - 180px);
+  min-height: calc(100vh - 270px);
   .coach {
     max-width: 800px;
-    margin: 80px auto 20px;
+    margin: 80px auto 10px;
     background-color: $contentBg;
     padding: 1%;
     border-radius: $radius;
     .coach_content {
-
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -30,16 +29,16 @@ main {
 }
 @media screen and (min-width: 1024px) {
   main {
-    min-height: calc(100vh - 240px);
+    min-height: calc(100vh - 300px);
     .coach {
-      margin: 140px auto 20px;
+      margin: 190px auto 10px;
       box-shadow: $shadow;
     }
   }
 }
 
-@media screen and (min-width: 1280px) {
-  main {
-    min-height: calc(100vh - 240px);
-  }
-}
+// @media screen and (min-width: 1280px) {
+//   main {
+//     min-height: calc(100vh - 300px);
+//   }
+// }

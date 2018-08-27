@@ -1,9 +1,10 @@
 @import "var.scss";
 main {
-  min-height: calc(100vh - 200px);
+  min-height: calc(100vh - 270px);
   .gallery {
     margin: 0 auto;
     margin-top: 80px;
+    margin-bottom: 10px;
     background-color: $contentBg;
     max-width: 800px;
     box-shadow: $shadow;
@@ -32,11 +33,11 @@ main {
 
 @media screen and (min-width: 1024px) {
   main {
-    min-height: calc(100vh - 240px);
+    min-height: calc(100vh - 300px);
     .gallery {
       margin: 0 auto;
-      margin-top: 140px;
-      margin-bottom: 20px;
+      margin-top: 190px;
+      margin-bottom: 10px;
       background-color: $contentBg;
       .gallery_content {
         // padding: 10px;
