@@ -6,8 +6,8 @@
 /* Icons */
 @font-face {
   font-family: "slick";
-  src: url("./fonts/slick.eot");
-  src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg");
+  src: url("../fonts/slick.eot");
+  src: url("../fonts/slick.eot?#iefix") format("embedded-opentype"), url("../fonts/slick.woff") format("woff"), url("../fonts/slick.ttf") format("truetype"), url("../fonts/slick.svg#slick") format("svg");
   font-weight: normal;
   font-style: normal; }
 /* Arrows */
@@ -38,34 +38,36 @@
     .slick-prev:hover:before, .slick-prev:focus:before,
     .slick-next:hover:before,
     .slick-next:focus:before {
-      opacity: 1; }
+      opacity: 1;
+      color: #312783; }
   .slick-prev.slick-disabled:before,
   .slick-next.slick-disabled:before {
-    opacity: 0.25; }
+    opacity: 0.2; }
   .slick-prev:before,
   .slick-next:before {
     font-family: "slick";
-    font-size: 20px;
+    font-size: 30px;
     line-height: 1;
     color: white;
-    opacity: 0.75;
+    opacity: 0.85;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; }
 
 .slick-prev {
-  left: -25px; }
+  left: 10px;
+  z-index: 90; }
   [dir="rtl"] .slick-prev {
     left: auto;
-    right: -25px; }
+    right: 10px; }
   .slick-prev:before {
     content: "←"; }
     [dir="rtl"] .slick-prev:before {
       content: "→"; }
 
 .slick-next {
-  right: -25px; }
+  right: 20px; }
   [dir="rtl"] .slick-next {
-    left: -25px;
+    left: 20px;
     right: auto; }
   .slick-next:before {
     content: "→"; }
@@ -78,7 +80,7 @@
 
 .slick-dots {
   position: absolute;
-  bottom: -25px;
+  bottom: 0px;
   list-style: none;
   display: block;
   text-align: center;
@@ -108,7 +110,8 @@
       .slick-dots li button:hover, .slick-dots li button:focus {
         outline: none; }
         .slick-dots li button:hover:before, .slick-dots li button:focus:before {
-          opacity: 1; }
+          opacity: 1;
+          color: #312783; }
       .slick-dots li button:before {
         position: absolute;
         top: 0;
@@ -117,15 +120,15 @@
         width: 20px;
         height: 20px;
         font-family: "slick";
-        font-size: 6px;
+        font-size: 15px;
         line-height: 20px;
         text-align: center;
-        color: black;
-        opacity: 0.25;
+        color: white;
+        opacity: 0.2;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale; }
     .slick-dots li.slick-active button:before {
-      color: black;
-      opacity: 0.75; }
+      color: white;
+      opacity: 0.85; }
 
 /*# sourceMappingURL=slick-theme.css.map */

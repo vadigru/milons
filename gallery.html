@@ -7,11 +7,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/gallery.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/slick-theme.css">
   <link rel="stylesheet" href="css/fontawesome-all.css">
-  <link rel="icon" type="image/png" href="img/icon.png">
+  <link rel="icon" type="image/png" href="img/milons_icon.png">
 
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -25,7 +24,7 @@
       <div class="bcc">
 
         <div class="logo">
-          <img src="img/wrestling.png" class="menu_btn" alt="Wrestling Club MILONS. Борцовский клуб Милонс.">
+          <img src="img/milons_logo_transp.png" class="menu_btn" alt="Wrestling Club MILONS. Борцовский клуб Милонс.">
           <span>Борцовский клуб "Милонс"</span>
         </div>
 
@@ -87,22 +86,38 @@
     </header>
 
     <main>
+        <!-- <div class="gallery">
+            <div class="gallery_content">
+              <div><img src="img/gallery/BRENT_METCALF.jpg" alt="">Брент Меткалф</div>
+              <div><img src="img/gallery/Pin-1024x683.jpg" alt="">Пацики рубятся</div>
+              <div><img src="img/gallery/wreslte_1024x1024.jpg" alt="">Захват жопой</div>
+              <div><img src="img/gallery/c4-19-of-24.jpg" alt="">Сел, насрал и победил</div>
+              <div><img src="img/gallery/images.jpg" alt="">Мне нужны ваши Яши</div>
+            </div>
+            <div class="gallery_content_sml">
+              <div class="thumb"><img src="img/gallery/sml_BRENT_METCALF.jpg" alt=""></div>
+              <div class="thumb"><img src="img/gallery/sml_Pin-1024x683.jpg" alt=""></div>
+              <div class="thumb"><img src="img/gallery/sml_wreslte_1024x1024.jpg" alt=""></div>
+              <div class="thumb"><img src="img/gallery/sml_c4-19-of-24.jpg" alt=""></div>
+              <div class="thumb"><img src="img/gallery/sml_images.jpg" alt=""></div>
+            </div>
+          </div> -->
       <div class="gallery">
         <div class="gallery_content">
-          <div><img src="img/gallery/BRENT_METCALF.jpg" alt="">Брент Меткалф</div>
-          <div><img src="img/gallery/Pin-1024x683.jpg" alt="">Пацики рубятся</div>
-          <div><img src="img/gallery/wreslte_1024x1024.jpg" alt="">Захват жопой</div>
-          <div><img src="img/gallery/c4-19-of-24.jpg" alt="">Сел, насрал и победил</div>
-          <div><img src="img/gallery/images.jpg" alt="">Мне нужны ваши Яши</div>
+          <div><img src="img/gallery/BRENT_METCALF.jpg" alt=""></div>
+          <div><img src="img/gallery/Pin-1024x683.jpg" alt=""></div>
+          <div><img src="img/gallery/wreslte_1024x1024.jpg" alt=""></div>
+          <div><img src="img/gallery/c4-19-of-24.jpg" alt=""></div>
+          <div><img src="img/gallery/images.jpg" alt=""></div>
         </div>
-        <div class="gallery_content_sml">
+        <!-- <div class="gallery_content_sml">
           <div class="thumb"><img src="img/gallery/sml_BRENT_METCALF.jpg" alt=""></div>
           <div class="thumb"><img src="img/gallery/sml_Pin-1024x683.jpg" alt=""></div>
           <div class="thumb"><img src="img/gallery/sml_wreslte_1024x1024.jpg" alt=""></div>
           <div class="thumb"><img src="img/gallery/sml_c4-19-of-24.jpg" alt=""></div>
           <div class="thumb"><img src="img/gallery/sml_images.jpg" alt=""></div>
         </div>
-      </div>
+      </div> -->
     </main>
 
     <footer>
@@ -124,7 +139,7 @@
   </div>
   <script src="js/script.js"></script>
   <script type="text/javascript" src="js/slick.js"></script>
-  <script type="text/javascript">
+  <!-- <script type="text/javascript">
     $(document).ready(function(){
       $('.gallery_content').slick({
       slidesToShow: 1,
@@ -143,7 +158,26 @@
       arrows: false
     });
     });
-  </script>
+  </script> -->
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.gallery_content').slick({
+          dots: true,
+  infinite: true,
+  speed: 500,
+  fade: true,
+  cssEase: 'linear'
+      });
+      // $('.gallery_content_sml').slick({
+      //   slidesToShow: 3,
+      //   slidesToScroll: 1,
+      //   asNavFor: '.gallery_content',
+      //   centerMode: true,
+      //   focusOnSelect: true,
+      //   arrows: false
+      // });
+      });
+    </script>
 </body>
 
 </html>

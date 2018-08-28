@@ -4,7 +4,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #404040;
+  background-color: #f5f5f5;
   overflow-y: scroll; }
 
 h1,
@@ -30,7 +30,7 @@ textarea {
 
 p {
   font-weight: 500;
-  font-size: 1.2em; }
+  font-size: 1em; }
 
 header {
   width: 100%;
@@ -40,173 +40,310 @@ header {
   left: 0;
   z-index: 100; }
   header .bcc {
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(176, 190, 197, 0.9);
-    height: 70px;
-    box-shadow: none; }
-  header .logo {
-    line-height: 70px;
-    font-size: 1.2em; }
-    header .logo span {
-      padding-left: 20px;
-      position: relative;
-      top: -7px; }
-  header .logo > img {
-    width: 50px;
-    height: 50px;
-    position: relative;
-    top: 10px;
-    left: 10px; }
-  header .hidden {
-    display: block; }
-
-.menu {
-  display: none; }
-
-.lang {
-  display: flex;
-  justify-content: center;
-  background-color: rgba(176, 190, 197, 0.9); }
-  .lang a {
-    padding: 6px 10px;
-    margin-right: 5px;
-    transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease; }
-
-nav {
-  display: block;
-  margin: 0 auto;
-  position: relative;
-  top: -9px;
-  left: 0;
-  font-size: 0.9em;
-  font-weight: 600; }
-  nav ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    position: relative;
-    box-shadow: none; }
-    nav ul li {
+    background-color: #ffe082;
+    height: 70px; }
+    header .bcc .logo {
+      font-size: 1.2em; }
+      header .bcc .logo img {
+        width: 50px;
+        height: 50px;
+        position: relative;
+        top: 10px;
+        left: 10px; }
+      header .bcc .logo span {
+        padding-left: 20px;
+        position: relative;
+        top: -7px;
+        color: #312783; }
+  header .menu {
+    display: none; }
+    header .menu nav {
       display: block;
-      text-transform: uppercase; }
-      nav ul li ul {
-        box-shadow: none; }
-        nav ul li ul li {
-          text-transform: capitalize; }
-          nav ul li ul li a {
-            background-color: rgba(176, 190, 197, 0.9);
-            color: #212121;
-            font-weight: 500;
+      margin: 0 auto;
+      position: relative;
+      top: 10px;
+      left: 0;
+      font-size: 0.9em;
+      font-weight: 600; }
+      header .menu nav ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        position: relative; }
+        header .menu nav ul li {
+          display: block;
+          text-transform: uppercase; }
+          header .menu nav ul li ul li {
+            text-transform: capitalize; }
+            header .menu nav ul li ul li a {
+              background-color: #ffd34f;
+              color: #212121;
+              font-weight: 500;
+              transition: all 0.5s ease;
+              -webkit-transition: all 0.5s ease;
+              -moz-transition: all 0.5s ease;
+              -ms-transition: all 0.5s ease;
+              -o-transition: all 0.5s ease; }
+              header .menu nav ul li ul li a:before {
+                font-family: 'FontAwesome';
+                content: ' \f0da';
+                padding-right: 10px; }
+            header .menu nav ul li ul li:last-child a {
+              border-bottom-left-radius: 3px;
+              border-bottom-right-radius: 3px; }
+          header .menu nav ul li #club {
+            display: none; }
+            header .menu nav ul li #club:checked ~ label {
+              background-color: #312783;
+              background-color: #ffd34f;
+              color: #312783;
+              cursor: pointer; }
+            header .menu nav ul li #club:checked ~ ul.club_submenu {
+              display: block; }
+            header .menu nav ul li #club:checked ~ label i {
+              transform: rotate(-180deg);
+              -webkit-transform: rotate(-180deg);
+              -moz-transform: rotate(-180deg);
+              -ms-transform: rotate(-180deg);
+              -o-transform: rotate(-180deg); }
+          header .menu nav ul li #schedule {
+            display: none; }
+            header .menu nav ul li #schedule:checked ~ label {
+              background-color: #312783;
+              background-color: #ffd34f;
+              color: #312783;
+              cursor: pointer; }
+            header .menu nav ul li #schedule:checked ~ ul.schedule_submenu {
+              display: block; }
+            header .menu nav ul li #schedule:checked ~ label i {
+              transform: rotate(-180deg);
+              -webkit-transform: rotate(-180deg);
+              -moz-transform: rotate(-180deg);
+              -ms-transform: rotate(-180deg);
+              -o-transform: rotate(-180deg); }
+          header .menu nav ul li label {
+            display: block;
+            padding: 10px 30px;
+            background-color: #ffe082;
+            cursor: pointer;
             transition: all 0.5s ease;
             -webkit-transition: all 0.5s ease;
             -moz-transition: all 0.5s ease;
             -ms-transition: all 0.5s ease;
             -o-transition: all 0.5s ease; }
-            nav ul li ul li a:before {
-              font-family: 'FontAwesome';
-              content: ' \f0da';
-              padding-right: 10px; }
-          nav ul li ul li:last-child a {
-            border-bottom-left-radius: 3px;
-            border-bottom-right-radius: 3px; }
-      nav ul li #club {
-        display: none; }
-        nav ul li #club:checked ~ label {
-          background-color: #41A7E1;
-          background-color: rgba(176, 190, 197, 0.9);
-          color: #41A7E1;
-          cursor: pointer; }
-        nav ul li #club:checked ~ ul.club_submenu {
-          display: block; }
-        nav ul li #club:checked ~ label i {
-          transform: rotate(-180deg);
-          -webkit-transform: rotate(-180deg);
-          -moz-transform: rotate(-180deg);
-          -ms-transform: rotate(-180deg);
-          -o-transform: rotate(-180deg); }
-      nav ul li #schedule {
-        display: none; }
-        nav ul li #schedule:checked ~ label {
-          background-color: #41A7E1;
-          background-color: rgba(176, 190, 197, 0.9);
-          color: #41A7E1;
-          cursor: pointer; }
-        nav ul li #schedule:checked ~ ul.schedule_submenu {
-          display: block; }
-        nav ul li #schedule:checked ~ label i {
-          transform: rotate(-180deg);
-          -webkit-transform: rotate(-180deg);
-          -moz-transform: rotate(-180deg);
-          -ms-transform: rotate(-180deg);
-          -o-transform: rotate(-180deg); }
-      nav ul li label {
-        display: block;
-        padding: 10px 30px;
-        background-color: rgba(176, 190, 197, 0.9);
-        cursor: pointer;
+            header .menu nav ul li label:hover {
+              color: #312783;
+              background-color: #ffd34f; }
+            header .menu nav ul li label i {
+              transition: all 0.3s ease;
+              -webkit-transition: all 0.3s ease;
+              -moz-transition: all 0.3s ease;
+              -ms-transition: all 0.3s ease;
+              -o-transition: all 0.3s ease; }
+          header .menu nav ul li a {
+            display: block;
+            text-decoration: none;
+            padding: 10px 30px;
+            background-color: #ffe082;
+            color: #212121;
+            transition: all 0.5s ease;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -ms-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease; }
+            header .menu nav ul li a:hover {
+              color: #312783;
+              background-color: #ffd34f; }
+          header .menu nav ul li ul.club_submenu {
+            display: none; }
+          header .menu nav ul li ul.schedule_submenu {
+            display: none; }
+    header .menu .lang {
+      display: flex;
+      justify-content: center;
+      background-color: #ffe082; }
+      header .menu .lang a {
+        padding: 10px 10px;
+        margin-right: 5px;
         transition: all 0.5s ease;
         -webkit-transition: all 0.5s ease;
         -moz-transition: all 0.5s ease;
         -ms-transition: all 0.5s ease;
         -o-transition: all 0.5s ease; }
-        nav ul li label:hover {
-          color: #41A7E1; }
-        nav ul li label i {
-          transition: all 0.3s ease;
-          -webkit-transition: all 0.3s ease;
-          -moz-transition: all 0.3s ease;
-          -ms-transition: all 0.3s ease;
-          -o-transition: all 0.3s ease; }
-      nav ul li a {
-        display: block;
-        text-decoration: none;
-        padding: 10px 30px;
-        background-color: rgba(176, 190, 197, 0.9);
-        color: #212121;
-        transition: all 0.5s ease;
-        -webkit-transition: all 0.5s ease;
-        -moz-transition: all 0.5s ease;
-        -ms-transition: all 0.5s ease;
-        -o-transition: all 0.5s ease; }
-        nav ul li a:hover {
-          color: #41A7E1; }
-      nav ul li ul.club_submenu {
-        display: none; }
-      nav ul li ul.schedule_submenu {
-        display: none; }
+  header .hidden {
+    display: block; }
 
-.news {
-  margin: 0 auto;
-  max-width: 800px;
-  padding: 1%;
-  margin-bottom: 10px;
-  background-color: #f5f5f5;
-  box-shadow: none;
-  border-radius: 3px; }
-  .news .news_image {
-    max-width: 400px; }
-    .news .news_image img {
+main {
+  min-height: calc(100vh - 250px);
+  max-width: 1280px;
+  background-color: #e0e0e0;
+  text-align: justify; }
+  main .club,
+  main .coach {
+    margin: 70px 0 auto;
+    padding: 1%; }
+    main .club .club_content,
+    main .club .coach_content,
+    main .coach .club_content,
+    main .coach .coach_content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      main .club .club_content .club_image img,
+      main .club .club_content .coach_image img,
+      main .club .coach_content .club_image img,
+      main .club .coach_content .coach_image img,
+      main .coach .club_content .club_image img,
+      main .coach .club_content .coach_image img,
+      main .coach .coach_content .club_image img,
+      main .coach .coach_content .coach_image img {
+        width: 250px;
+        height: 250px;
+        border-radius: 3px; }
+      main .club .club_content .club_text h4,
+      main .club .club_content .coach_text h4,
+      main .club .coach_content .club_text h4,
+      main .club .coach_content .coach_text h4,
+      main .coach .club_content .club_text h4,
+      main .coach .club_content .coach_text h4,
+      main .coach .coach_content .club_text h4,
+      main .coach .coach_content .coach_text h4 {
+        text-align: center;
+        font-size: 2em; }
+  main .news {
+    margin: 0 auto;
+    padding: 1%; }
+    main .news .news_image {
+      max-width: 400px; }
+      main .news .news_image img {
+        width: 100%;
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 10px; }
+    main .news:first-child {
+      margin-top: 70px; }
+    main .news:last-child {
+      margin-bottom: 0px; }
+  main .news_divider {
+    height: 10px;
+    widows: 100%;
+    background-color: #f5f5f5; }
+    main .news_divider:last-child {
+      display: none; }
+  main .gallery {
+    margin: 70px 0 auto;
+    padding: 1%; }
+    main .gallery .gallery_content {
+      margin: 0 auto; }
+      main .gallery .gallery_content img {
+        width: 100%;
+        border-radius: 3px; }
+    main .gallery .gallery_content_sml .thumb {
+      padding: 5px; }
+      main .gallery .gallery_content_sml .thumb img {
+        width: 100%;
+        border-radius: 3px; }
+  main .schedule {
+    padding: 1%; }
+    main .schedule:first-child {
+      margin-top: 70px; }
+    main .schedule .schedule_content table {
       width: 100%;
-      float: left;
-      margin-right: 20px;
-      margin-bottom: 10px; }
-  .news:first-child {
-    margin-top: 80px; }
-  .news:last-child {
-    margin-bottom: 10px; }
+      border: 0;
+      border-collapse: collapse; }
+      main .schedule .schedule_content table thead td {
+        text-align: center;
+        padding: 10px;
+        background-color: #fff9e8; }
+      main .schedule .schedule_content table tr:hover {
+        background-color: #312783;
+        color: white; }
+      main .schedule .schedule_content table tr td {
+        padding: 10px; }
+        main .schedule .schedule_content table tr td:nth-child(2) {
+          text-align: right; }
+    main .schedule .schedule_content tr:nth-child(odd) {
+      background-color: white; }
+  main .contacts {
+    margin: 70px 0 auto;
+    padding: 1%; }
+    main .contacts .contacts_bcc {
+      font-family: 'Tahoma', 'Verdana', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      main .contacts .contacts_bcc iframe {
+        display: block;
+        width: 100%;
+        height: 300px;
+        margin: 0 auto; }
+      main .contacts .contacts_bcc .contacts_address {
+        width: 100%; }
+        main .contacts .contacts_bcc .contacts_address table {
+          border-collapse: collapse;
+          width: 100%;
+          margin: auto; }
+          main .contacts .contacts_bcc .contacts_address table tr td {
+            padding: 10px; }
+        main .contacts .contacts_bcc .contacts_address tr:first-child {
+          font-weight: 600;
+          height: 30px; }
+        main .contacts .contacts_bcc .contacts_address tr:nth-child(even) {
+          background-color: white; }
+        main .contacts .contacts_bcc .contacts_address td:nth-child(odd) {
+          font-size: 0.9em; }
+        main .contacts .contacts_bcc .contacts_address td:nth-child(even) {
+          font-size: 0.8em; }
+  main .contacts_form .contacts_bcc .contacts_input {
+    background-color: #e0e0e0;
+    margin: 0 auto;
+    padding: 1%; }
+    main .contacts_form .contacts_bcc .contacts_input form {
+      font-family: 'Tahoma', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      main .contacts_form .contacts_bcc .contacts_input form div {
+        margin: 10px 0; }
+      main .contacts_form .contacts_bcc .contacts_input form input {
+        margin-bottom: 20px;
+        padding: 5px;
+        width: 95%;
+        border: none;
+        border-radius: 3px;
+        font-size: 0.9em; }
+        main .contacts_form .contacts_bcc .contacts_input form input:hover, main .contacts_form .contacts_bcc .contacts_input form input:active, main .contacts_form .contacts_bcc .contacts_input form input:focus {
+          box-shadow: 0 0 5px #312783;
+          outline: none; }
+      main .contacts_form .contacts_bcc .contacts_input form textarea {
+        width: 95%;
+        height: 150px;
+        padding: 5px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 3px;
+        font-size: 0.9em; }
+        main .contacts_form .contacts_bcc .contacts_input form textarea:hover, main .contacts_form .contacts_bcc .contacts_input form textarea:active, main .contacts_form .contacts_bcc .contacts_input form textarea:focus {
+          box-shadow: 0 0 5px #312783;
+          outline: none; }
+      main .contacts_form .contacts_bcc .contacts_input form #submit {
+        width: 30%;
+        cursor: pointer;
+        background-color: white;
+        transition: all 0.5s ease; }
+        main .contacts_form .contacts_bcc .contacts_input form #submit:hover, main .contacts_form .contacts_bcc .contacts_input form #submit:active, main .contacts_form .contacts_bcc .contacts_input form #submit:focus {
+          box-shadow: 0 0 5px #312783;
+          background-color: #312783;
+          color: white; }
 
 footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   color: #f2f2f2;
-  background-color: #212121;
-  box-shadow: none;
+  background-color: #616161;
   height: 180px; }
   footer .footer_copy {
     align-self: center;
@@ -228,7 +365,7 @@ footer {
       footer .footer_social .fb a {
         color: #f2f2f2; }
         footer .footer_social .fb a:hover {
-          color: #4867AA; }
+          color: #4867aa; }
 
 .clearfix {
   content: '';
@@ -236,50 +373,112 @@ footer {
   display: table; }
 
 @media screen and (min-width: 1024px) {
+  .wrapper {
+    max-width: 1280px;
+    margin: 0 auto; }
+
   header {
-    height: 180px;
+    height: 150px;
     position: fixed;
-    box-shadow: none; }
+    transition: all 0.3s ease; }
     header .bcc {
-      height: 180px; }
-    header .logo {
-      text-align: center; }
-      header .logo img {
-        width: 100px;
-        height: 100px; }
-      header .logo span {
-        position: relative;
-        top: -20px;
-        font-size: 2em; }
+      max-width: 1280px;
+      height: 150px;
+      margin: 0 auto; }
+      header .bcc .logo {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly; }
+        header .bcc .logo img {
+          width: 80px;
+          height: 80px; }
+        header .bcc .logo span {
+          position: relative;
+          font-size: 2em; }
     header .menu {
-      display: block; }
-    header .lang {
-      display: flex;
-      justify-content: center;
-      flex-direction: row;
-      position: relative;
-      top: 4px;
-      background-color: transparent; }
-    header nav {
       display: flex;
       justify-content: center; }
-      header nav ul {
-        box-shadow: none;
-        display: flex; }
-        header nav ul li #schedule {
-          display: none; }
-        header nav ul li label {
-          background-color: transparent; }
-        header nav ul li a {
-          background-color: transparent; }
+      header .menu nav {
+        top: 30px; }
+        header .menu nav ul {
+          display: flex; }
+          header .menu nav ul li #schedule {
+            display: none; }
+          header .menu nav ul li label {
+            background-color: transparent; }
+          header .menu nav ul li a {
+            background-color: transparent; }
+      header .menu .lang {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        position: relative;
+        background-color: transparent; }
 
-  .news:first-child {
-    margin-top: 190px; }
+  main {
+    min-height: calc(100vh - 250px);
+    font-size: 1.1em; }
+    main .club,
+    main .coach {
+      max-width: 800px;
+      margin: 150px auto 0;
+      border-radius: 3px; }
+    main .news {
+      max-width: 800px;
+      margin: 0 auto; }
+      main .news:first-child {
+        margin-top: 150px; }
+    main .gallery {
+      max-width: 800px;
+      margin: 150px auto 0;
+      border-radius: 3px; }
+      main .gallery .gallery_content {
+        margin: 0 auto; }
+        main .gallery .gallery_content img {
+          width: 100%; }
+      main .gallery .gallery_content_sml .thumb {
+        padding: 5px; }
+        main .gallery .gallery_content_sml .thumb img {
+          width: 100%; }
+    main .schedule {
+      max-width: 800px;
+      margin: 0 auto; }
+      main .schedule:first-child {
+        margin-top: 150px; }
+      main .schedule .schedule_content table tr td {
+        padding: 10px 10% 10px; }
+    main .contacts {
+      max-width: 1280px;
+      margin: 150px auto 0;
+      border-radius: 3px; }
+      main .contacts .contacts_bcc {
+        flex-direction: row; }
+        main .contacts .contacts_bcc iframe {
+          width: 50%; }
+        main .contacts .contacts_bcc .contacts_address {
+          width: 50%;
+          margin-left: 20px; }
+          main .contacts .contacts_bcc .contacts_address td:nth-child(odd) {
+            font-size: 1em; }
+          main .contacts .contacts_bcc .contacts_address td:nth-child(even) {
+            font-size: 1em; }
+    main .contacts_form {
+      font-size: 1.3em; }
+      main .contacts_form .contacts_bcc .contacts_input {
+        border-radius: 3px; }
+        main .contacts_form .contacts_bcc .contacts_input form input {
+          width: 50%;
+          font-size: 0.85em;
+          padding: 10px; }
+        main .contacts_form .contacts_bcc .contacts_input form textarea {
+          width: 50%;
+          font-size: 0.85em;
+          padding: 10px; }
 
   footer {
     flex-direction: row;
     justify-content: space-around;
-    height: 100px; }
+    height: 200px; }
     footer .footer_copy {
       order: 0; }
     footer .footer_contact {

@@ -8,7 +8,7 @@
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/fontawesome-all.css">
-  <link rel="icon" type="image/png" href="img/icon.png">
+  <link rel="icon" type="image/png" href="img/milons_icon.png">
   <title>Борцовский клуб "Милонс"</title>
 </head>
 
@@ -18,7 +18,7 @@
       <div class="bcc">
 
         <div class="logo">
-          <img src="img/wrestling.png" class="menu_btn" alt="Wrestling Club MILONS. Борцовский клуб Милонс.">
+          <img src="img/milons_logo_transp.png" class="menu_btn" alt="Wrestling Club MILONS. Борцовский клуб Милонс.">
           <span>Борцовский клуб "Милонс"</span>
         </div>
 
@@ -72,7 +72,6 @@
                   <div class="lang_btn"><a href="#"> RU </a></div>
                 </div>
               </li>
-
             </ul>
           </nav>
         </div>
@@ -81,14 +80,14 @@
 
     <main>
     <?php
-    // $link = mysqli_connect(
-    //     'localhost',
-    //     'id5756831_admin1',
-    //     'password1',
-    //     'id5756831_milonsdb'
-    // ) or die("Ошибка " . mysqli_error($link));
-    $link = mysqli_connect('localhost', 'admin1', 'password1', 'milonsdb') or
-        die("Ошибка " . mysqli_error($link));
+    $link = mysqli_connect(
+        'localhost',
+        'id5756831_admin1',
+        'password1',
+        'id5756831_milonsdb'
+    ) or die("Ошибка " . mysqli_error($link));
+    // $link = mysqli_connect('localhost', 'admin1', 'password1', 'milonsdb') or
+    //     die("Ошибка " . mysqli_error($link));
 
     $query = "SELECT * FROM news ORDER by date desc";
     $result = mysqli_query($link, $query) or
@@ -112,8 +111,8 @@
           <?php echo $row['text']; ?>
         </p>
 
-
       </article>
+      <div class="news_divider"></div>
       <?php } while ($row = mysqli_fetch_assoc($result));
     } ?>
     </main>
