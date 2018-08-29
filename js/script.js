@@ -20,8 +20,8 @@ function bringmenu() {
   let width = document.body.offsetWidth;
   if (width >= 1024) {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-      document.querySelector(`header`).style.top = `-100px`;
-      document.querySelector(`.bcc`).style.backgroundColor = `rgba(255, 224, 130, 0.8)`;
+      document.querySelector(`header`).style.top = `-110px`;
+      document.querySelector(`.bcc`).style.backgroundColor = `rgba(255, 224, 130, 0.9)`;
     } else {
       document.querySelector(`header`).style.top = `0`;
       document.querySelector(`.bcc`).style.backgroundColor = `rgba(255, 224, 130)`;

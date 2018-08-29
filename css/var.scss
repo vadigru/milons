@@ -9,11 +9,14 @@ $tableLine: lighten($header, 30%);
 $tableHeadLine: lighten($header, 20%);
 $pageWidth: 1280px;
 $contentWidth: 800px;
-$pageMainHeight: calc(100vh - 250px);
-$pageMainMinHeight: calc(100vh - 250px);
+$pageMainHeight: calc(100vh - 180px);
+$pageMainMinHeight: calc(100vh - 200px);
 $dropMenuColor: darken($header, 10%);
+$headerHeight: 150px;
 $marginTopDesktop: 150px;
 $marginTopMobile: 70px;
+$footerHeightMobile: 180px;
+$footerHeightDesktop: 200px;
 $contentPadding: 1%;
 
 @mixin content {
