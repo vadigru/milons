@@ -1,7 +1,12 @@
 @import 'var.scss';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @font-face {
   font-family: 'FontAwesome';
   src: url('../webfonts/fa-solid-900.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Bookman Old Style';
+  src: url('../fonts/BOOKOS.TTF') format('truetype');
 }
 
 body {
@@ -16,8 +21,10 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  font-family: 'Garamond', 'Georgia' serif;
+h6,
+.logo > span,
+.page_number {
+  font-family: 'Bookman Old Style', 'Garamond', 'Georgia', serif;
 }
 
 h3 {
@@ -32,7 +39,7 @@ td,
 footer,
 .gallery_content,
 textarea {
-  font-family: 'Tahoma', 'Verdana', sans-serif;
+  font-family: 'Open Sans', 'Tahoma', 'Verdana', sans-serif;
 }
 
 p {
@@ -51,7 +58,7 @@ header {
     background-color: $header;
     height: $marginTopMobile;
     .logo {
-      font-size: 1.2em;
+      font-size: 1.1em;
       img {
         width: 50px;
         height: 50px;
@@ -216,8 +223,7 @@ header {
     }
   }
 
-
-  .hidden {
+  .show {
     display: block;
   }
 }
@@ -440,6 +446,23 @@ main {
   }
 }
 
+.paginator {
+  display: flex;
+  justify-content: center;
+  background-color: $bodyBgColor;
+  .page_number {
+    font-size: 1em;
+    margin: 5px 5px;
+    a {
+      text-decoration: none;
+      color: #212121;
+    }
+    .active {
+      color: $header;
+    }
+  }
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -511,13 +534,12 @@ footer {
           font-size: 2em;
         }
       }
-
     }
     .menu {
       display: flex;
       justify-content: center;
       nav {
-        top: 30px;
+        top: 20px;
         ul {
           display: flex;
           li {
@@ -619,6 +641,23 @@ footer {
             }
           }
         }
+      }
+    }
+  }
+
+  .paginator {
+    display: flex;
+    justify-content: center;
+    background-color: $bodyBgColor;
+    .page_number {
+      font-size: 1.5em;
+      margin: 5px 5px;
+      a {
+        text-decoration: none;
+        color: #212121;
+      }
+      .active {
+        color: $header;
       }
     }
   }

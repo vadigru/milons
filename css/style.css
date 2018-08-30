@@ -1,6 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @font-face {
   font-family: 'FontAwesome';
   src: url("../webfonts/fa-solid-900.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Bookman Old Style';
+  src: url("../fonts/BOOKOS.TTF") format("truetype"); }
 body {
   margin: 0;
   padding: 0;
@@ -12,8 +16,10 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  font-family: 'Garamond', 'Georgia' serif; }
+h6,
+.logo > span,
+.page_number {
+  font-family: 'Bookman Old Style', 'Garamond', 'Georgia', serif; }
 
 h3 {
   font-style: italic;
@@ -26,7 +32,7 @@ td,
 footer,
 .gallery_content,
 textarea {
-  font-family: 'Tahoma', 'Verdana', sans-serif; }
+  font-family: 'Open Sans', 'Tahoma', 'Verdana', sans-serif; }
 
 p {
   font-weight: 500;
@@ -43,7 +49,7 @@ header {
     background-color: #ffe082;
     height: 70px; }
     header .bcc .logo {
-      font-size: 1.2em; }
+      font-size: 1.1em; }
       header .bcc .logo img {
         width: 50px;
         height: 50px;
@@ -170,7 +176,7 @@ header {
         -moz-transition: all 0.5s ease;
         -ms-transition: all 0.5s ease;
         -o-transition: all 0.5s ease; }
-  header .hidden {
+  header .show {
     display: block; }
 
 main {
@@ -338,6 +344,19 @@ main {
           background-color: #312783;
           color: white; }
 
+.paginator {
+  display: flex;
+  justify-content: center;
+  background-color: #f5f5f5; }
+  .paginator .page_number {
+    font-size: 1em;
+    margin: 5px 5px; }
+    .paginator .page_number a {
+      text-decoration: none;
+      color: #212121; }
+    .paginator .page_number .active {
+      color: #ffe082; }
+
 footer {
   display: flex;
   flex-direction: column;
@@ -399,7 +418,7 @@ footer {
       display: flex;
       justify-content: center; }
       header .menu nav {
-        top: 30px; }
+        top: 20px; }
         header .menu nav ul {
           display: flex; }
           header .menu nav ul li #schedule {
@@ -474,6 +493,19 @@ footer {
           width: 50%;
           font-size: 0.85em;
           padding: 10px; }
+
+  .paginator {
+    display: flex;
+    justify-content: center;
+    background-color: #f5f5f5; }
+    .paginator .page_number {
+      font-size: 1.5em;
+      margin: 5px 5px; }
+      .paginator .page_number a {
+        text-decoration: none;
+        color: #212121; }
+      .paginator .page_number .active {
+        color: #ffe082; }
 
   footer {
     flex-direction: row;

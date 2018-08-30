@@ -18,7 +18,7 @@
       <div class="bcc">
 
         <div class="logo">
-          <img src="img/milons_logo_transp.png" class="menu_btn" alt="Wrestling Club MILONS. Борцовский клуб Милонс.">
+        <a href="index.php"><img src="img/milons_logo_transp.png" class="menu_btn" alt="Wrestling Club MILONS. Борцовский клуб Милонс."></a>
           <span>Борцовский клуб "Милонс"</span>
         </div>
 
@@ -28,7 +28,7 @@
               <li>
                 <input type="checkbox" id="club" class="menu_btn">
                 <label for="club" class="menu_btn">О клубе
-                  <i class="fas fa-angle-down"></i>
+                  <i class="fas fa-angle-down menu_btn"></i>
                 </label>
                 <ul class="club_submenu">
                   <li>
@@ -48,7 +48,7 @@
               <li>
                 <input type="checkbox" id="schedule" class="menu_btn">
                 <label for="schedule" class="menu_btn">Расписание
-                  <i class="fas fa-angle-down"></i>
+                  <i class="fas fa-angle-down menu_btn"></i>
                 </label>
                 <ul class="schedule_submenu">
                   <li>
@@ -67,9 +67,9 @@
               </li>
               <li>
                 <div class="lang">
-                  <div class="lang_btn"><a href="#"> LV </a></div>
-                  <div class="lang_btn"><a href="#"> EN </a></div>
-                  <div class="lang_btn"><a href="#"> RU </a></div>
+                  <div class="lang_btn"><a href="#" class="menu_btn"> LV </a></div>
+                  <div class="lang_btn"><a href="#" class="menu_btn"> EN </a></div>
+                  <div class="lang_btn"><a href="#" class="menu_btn"> RU </a></div>
                 </div>
               </li>
             </ul>
@@ -80,22 +80,38 @@
 
     <main>
     <?php
-    // $link = mysqli_connect(
-    //     'localhost',
-    //     'id5756831_admin1',
-    //     'password1',
-    //     'id5756831_milonsdb'
-    // ) or die("Ошибка " . mysqli_error($link));
-    $link = mysqli_connect('localhost', 'admin1', 'password1', 'milonsdb') or
-        die("Ошибка " . mysqli_error($link));
+    $link = mysqli_connect(
+        'localhost',
+        'id5756831_admin1',
+        'password1',
+        'id5756831_milonsdb'
+    ) or die("Ошибка " . mysqli_error($link));
+    // $link = mysqli_connect('localhost', 'admin1', 'password1', 'milonsdb') or
+    //     die("Ошибка " . mysqli_error($link));
 
     $query = "SELECT * FROM news ORDER by date desc";
     $result = mysqli_query($link, $query) or
         die("Ошибка " . mysqli_error($link));
-    $row = mysqli_fetch_assoc($result);
+    $row = mysqli_fetch_array($result);
+    $number_of_results = mysqli_num_rows($result);
+    $results_per_page = 3;
+    $number_of_pages = ceil($number_of_results / $results_per_page);
+    if (!isset($_GET['page'])) {
+        $page = 1;
+    } else {
+        $page = $_GET['page'];
+    }
+    $this_page_first_result = ($page - 1) * $results_per_page;
+    $query =
+        "SELECT * FROM news ORDER by date desc LIMIT " .
+        $this_page_first_result .
+        ',' .
+        $results_per_page;
+    $result = mysqli_query($link, $query) or
+        die("Ошибка " . mysqli_error($link));
     ?>
     <?php if ($result) {
-        do { ?>
+        while ($row = mysqli_fetch_array($result)) { ?>
       <article class="news clearfix">
 
         <h1>
@@ -113,10 +129,20 @@
 
       </article>
       <div class="news_divider"></div>
-      <?php } while ($row = mysqli_fetch_assoc($result));
+      <?php }
     } ?>
     </main>
-
+    <div class="paginator">
+    <?php for ($page = 1; $page <= $number_of_pages; $page++) {
+        echo '<div class="page_number">
+       <a href="index.php?page=' .
+            $page .
+            '">' .
+            $page .
+            ' ' .
+            '</a> </div>';
+    } ?>
+    </div>
     <footer>
       <div class="footer_copy">
         <div class="copy"><i class="far fa-copyright"></i> 2018 Борцовский клуб "Милонс"</div>
@@ -135,6 +161,7 @@
     </footer>
   </div>
   <script src="js/script.js"></script>
+  <script src="js/pure-swipe.min.js"></script>
 </body>
 
 </html>
