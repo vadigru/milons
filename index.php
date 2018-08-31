@@ -161,6 +161,7 @@
     </footer>
   </div>
   <script src="js/script.js"></script>
+  <script src="js/paginator.js"></script>
   <script src="js/pure-swipe.min.js"></script>
 </body>
 

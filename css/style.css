@@ -94,6 +94,8 @@ header {
                 font-family: 'FontAwesome';
                 content: ' \f0da';
                 padding-right: 10px; }
+              header .menu nav ul li ul li a:hover {
+                border-radius: 0; }
             header .menu nav ul li ul li:last-child a {
               border-bottom-left-radius: 3px;
               border-bottom-right-radius: 3px; }
@@ -101,8 +103,7 @@ header {
             display: none; }
             header .menu nav ul li #club:checked ~ label {
               background-color: #312783;
-              background-color: #ffd34f;
-              color: #312783;
+              color: #f5f5f5;
               cursor: pointer; }
             header .menu nav ul li #club:checked ~ ul.club_submenu {
               display: block; }
@@ -116,8 +117,7 @@ header {
             display: none; }
             header .menu nav ul li #schedule:checked ~ label {
               background-color: #312783;
-              background-color: #ffd34f;
-              color: #312783;
+              color: #f5f5f5;
               cursor: pointer; }
             header .menu nav ul li #schedule:checked ~ ul.schedule_submenu {
               display: block; }
@@ -138,14 +138,9 @@ header {
             -ms-transition: all 0.5s ease;
             -o-transition: all 0.5s ease; }
             header .menu nav ul li label:hover {
-              color: #312783;
-              background-color: #ffd34f; }
-            header .menu nav ul li label i {
-              transition: all 0.3s ease;
-              -webkit-transition: all 0.3s ease;
-              -moz-transition: all 0.3s ease;
-              -ms-transition: all 0.3s ease;
-              -o-transition: all 0.3s ease; }
+              color: #f5f5f5;
+              background-color: #312783;
+              border-radius: 3px; }
           header .menu nav ul li a {
             display: block;
             text-decoration: none;
@@ -158,8 +153,9 @@ header {
             -ms-transition: all 0.5s ease;
             -o-transition: all 0.5s ease; }
             header .menu nav ul li a:hover {
-              color: #312783;
-              background-color: #ffd34f; }
+              color: #f5f5f5;
+              background-color: #312783;
+              border-radius: 3px; }
           header .menu nav ul li ul.club_submenu {
             display: none; }
           header .menu nav ul li ul.schedule_submenu {
@@ -350,12 +346,23 @@ main {
   background-color: #f5f5f5; }
   .paginator .page_number {
     font-size: 1em;
-    margin: 5px 5px; }
+    margin: 10px 10px; }
     .paginator .page_number a {
       text-decoration: none;
-      color: #212121; }
+      color: #212121;
+      padding: 5px 10px;
+      border-radius: 3px;
+      transition: all 0.5s ease; }
+      .paginator .page_number a:hover {
+        background-color: #312783;
+        color: #f5f5f5; }
     .paginator .page_number .active {
-      color: #ffe082; }
+      color: #ffe082;
+      background-color: #ffe082;
+      color: #312783; }
+      .paginator .page_number .active:hover {
+        background-color: #ffe082;
+        color: #312783; }
 
 footer {
   display: flex;
@@ -413,7 +420,8 @@ footer {
           height: 80px; }
         header .bcc .logo span {
           position: relative;
-          font-size: 2em; }
+          font-size: 2em;
+          top: 0; }
     header .menu {
       display: flex;
       justify-content: center; }
@@ -500,12 +508,23 @@ footer {
     background-color: #f5f5f5; }
     .paginator .page_number {
       font-size: 1.5em;
-      margin: 5px 5px; }
+      margin: 10px 10px; }
       .paginator .page_number a {
         text-decoration: none;
-        color: #212121; }
+        color: #212121;
+        padding: 5px 10px;
+        border-radius: 3px;
+        transition: all 0.5s ease; }
+        .paginator .page_number a:hover {
+          background-color: #312783;
+          color: #f5f5f5; }
       .paginator .page_number .active {
-        color: #ffe082; }
+        color: #ffe082;
+        background-color: #ffe082;
+        color: #312783; }
+        .paginator .page_number .active:hover {
+          background-color: #ffe082;
+          color: #312783; }
 
   footer {
     flex-direction: row;

@@ -109,6 +109,9 @@ header {
                   content: ' \f0da';
                   padding-right: 10px;
                 }
+                &:hover {
+                  border-radius: 0;
+                }
               }
               &:last-child {
                 a {
@@ -123,8 +126,7 @@ header {
             &:checked {
               ~ label {
                 background-color: $hoverColor;
-                background-color: $dropMenuColor;
-                color: $hoverColor;
+                color: $bodyBgColor;
                 cursor: pointer;
               }
               ~ ul.club_submenu {
@@ -144,8 +146,7 @@ header {
             &:checked {
               ~ label {
                 background-color: $hoverColor;
-                background-color: $dropMenuColor;
-                color: $hoverColor;
+                color: $bodyBgColor;
                 cursor: pointer;
               }
               ~ ul.schedule_submenu {
@@ -171,16 +172,17 @@ header {
             -ms-transition: all 0.5s ease;
             -o-transition: all 0.5s ease;
             &:hover {
-              color: $hoverColor;
-              background-color: $dropMenuColor;
+              color: $bodyBgColor;
+              background-color: $hoverColor;
+              border-radius: $radius;
             }
-            i {
-              transition: all 0.3s ease;
-              -webkit-transition: all 0.3s ease;
-              -moz-transition: all 0.3s ease;
-              -ms-transition: all 0.3s ease;
-              -o-transition: all 0.3s ease;
-            }
+            // i {
+            //   transition: rotate 0.5s ease;
+            //   -webkit-transition: rotate 0.5s ease;
+            //   -moz-transition: rotate 0.5s ease;
+            //   -ms-transition: rotate 0.5s ease;
+            //   -o-transition: rotate 0.5s ease;
+            // }
           }
           a {
             display: block;
@@ -194,8 +196,9 @@ header {
             -ms-transition: all 0.5s ease;
             -o-transition: all 0.5s ease;
             &:hover {
-              color: $hoverColor;
-              background-color: $dropMenuColor;
+              color: $bodyBgColor;
+              background-color: $hoverColor;
+              border-radius: $radius;
             }
           }
           ul.club_submenu {
@@ -452,13 +455,26 @@ main {
   background-color: $bodyBgColor;
   .page_number {
     font-size: 1em;
-    margin: 5px 5px;
+    margin: 10px 10px;
     a {
       text-decoration: none;
       color: #212121;
+      padding: 5px 10px;
+      border-radius: $radius;
+      transition: all 0.5s ease;
+      &:hover {
+        background-color: $hoverColor;
+        color: $bodyBgColor;
+      }
     }
     .active {
       color: $header;
+      background-color: $header;
+      color: $hoverColor;
+      &:hover {
+        background-color: $header;
+        color: $hoverColor;
+      }
     }
   }
 }
@@ -532,6 +548,7 @@ footer {
         span {
           position: relative;
           font-size: 2em;
+          top: 0;
         }
       }
     }
@@ -651,13 +668,26 @@ footer {
     background-color: $bodyBgColor;
     .page_number {
       font-size: 1.5em;
-      margin: 5px 5px;
+      margin: 10px 10px;
       a {
         text-decoration: none;
         color: #212121;
+        padding: 5px 10px;
+        border-radius: $radius;
+        transition: all 0.5s ease;
+        &:hover {
+          background-color: $hoverColor;
+          color: $bodyBgColor;
+        }
       }
       .active {
         color: $header;
+        background-color: $header;
+        color: $hoverColor;
+        &:hover {
+          background-color: $header;
+          color: $hoverColor;
+        }
       }
     }
   }
