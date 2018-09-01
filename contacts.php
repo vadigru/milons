@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/fontawesome-all.css">
   <link rel="icon" type="image/png" href="img/milons_icon.png">
-  <title>Борцовский клуб "Милонс"</title>
+  <title>Cīņu klubs "Milons"</title>
 </head>
 
 <body>
@@ -25,22 +25,22 @@
           <div class="contacts_address">
             <table>
               <tr>
-                <td colspan="2">Борцовский клуб "Милонс" </td>
+                <td colspan="2">Cīņu klubs "Milons" </td>
               </tr>
               <tr>
-                <td>Тренер: </td>
-                <td>Владимир Смирнов</td>
+                <td>Treneris: </td>
+                <td>Vladimirs Smirnovs</td>
               </tr>
               <tr>
-                <td>Тел:</td>
+                <td>Tel:</td>
                 <td>+371 29230688</td>
               </tr>
               <tr>
-                <td>Адрес: </td>
-                <td>ул. Узварас 12, г.Елгава, Латвия, LV-3001</td>
+                <td>Adrese: </td>
+                <td>Uzvaras iela 12, Jelgava, Latvija, LV-3001</td>
               </tr>
               <tr>
-                <td>Почта: </td>
+                <td>E-pasts: </td>
                 <td>vladimirs.smirnovs@inbox.lv (ru, lv)
                   <br> j-smirnova@bk.ru (en)</td>
               </tr>
@@ -53,12 +53,12 @@
         <div class="contacts_bcc">
           <div class="contacts_input">
             <form action="php/send.php" method="post">
-              <div>Есть вопрос? Спрашивай!</div>
-              <input name="name" type="text" id="name" placeholder="Имя">
-              <input name="phone" type="text" id="phone" placeholder="Телефон">
-              <input name="email" type="text" id="email" placeholder="Почта">
-              <textarea name="message" id="message" placeholder="Сообщение"></textarea>
-              <input type="submit" name="submit" id="submit" value="Отправить">
+              <div>Uzdot jautājumu</div>
+              <input name="name" type="text" id="name" placeholder="Vārds">
+              <input name="phone" type="text" id="phone" placeholder="Telefons">
+              <input name="email" type="text" id="email" placeholder="E-pasts">
+              <textarea name="message" id="message" placeholder="Ziņojums"></textarea>
+              <input type="submit" name="submit" id="submit" value="Sūtīt">
             </form>
           </div>
         </div>

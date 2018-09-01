@@ -141,6 +141,12 @@ header {
               color: #f5f5f5;
               background-color: #312783;
               border-radius: 3px; }
+            header .menu nav ul li label i {
+              transition: transform 0.5s ease;
+              -webkit-transition: transform 0.5s ease;
+              -moz-transition: transform 0.5s ease;
+              -ms-transition: transform 0.5s ease;
+              -o-transition: transform 0.5s ease; }
           header .menu nav ul li a {
             display: block;
             text-decoration: none;
@@ -417,16 +423,20 @@ footer {
       height: 150px;
       margin: 0 auto; }
       header .bcc .logo {
+        max-width: 800px;
         display: flex;
         align-items: center;
-        justify-content: space-evenly; }
+        justify-content: space-between;
+        margin: 0 auto; }
         header .bcc .logo img {
           width: 80px;
-          height: 80px; }
+          height: 80px;
+          margin-left: 20px; }
         header .bcc .logo span {
           position: relative;
           font-size: 2em;
-          top: 0; }
+          top: 0;
+          margin-right: 20px; }
     header .menu {
       display: flex;
       justify-content: center; }

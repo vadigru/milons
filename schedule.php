@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/fontawesome-all.css">
   <link rel="icon" type="image/png" href="img/milons_icon.png">
-  <title>Борцовский клуб "Милонс"</title>
+  <title>Cīņu klubs "Milons"</title>
 </head>
 
 <body id="group_1">
@@ -23,38 +23,38 @@
          <table>
           <thead>
             <tr>
-              <td colspan="2"> Расписание тренировок для группы 1</td>
+              <td colspan="2">Treniņu saraksts 1 grupai</td>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Понедельник</td>
+              <td>Pirmdiena</td>
               <td>16:00 - 18:00</td>
             </tr>
             <tr>
-              <td>Вторник</td>
+              <td>Otrdiena</td>
               <td>16:00 - 18:00</td>
             </tr>
             <tr>
-              <td>Среда</td>
+              <td>Trešdiena</td>
               <td>16:00 - 18:00</td>
             </tr>
             <tr>
-              <td>Четверг</td>
+              <td>Ceturdiena</td>
               <td>16:00 - 18:00</td>
             </tr>
             <tr>
-              <td>Пятница</td>
+              <td>Piektdiena</td>
               <td  id="group_2">16:00 - 18:00</td>
             </tr>
             <tr>
-                <td>Суббота</td>
-                <td>Можно бухнуть</td>
-              </tr>
-              <tr>
-                <td>Воскресенье</td>
-                <td>Отдыхаем</td>
-              </tr>
+              <td>Sestdiena</td>
+              <td>Trakais tusiņš</td>
+            </tr>
+            <tr>
+              <td>Svētdiena</td>
+              <td>Atpūšamies</td>
+            </tr>
           </tbody>
           <tfoot></tfoot>
          </table>
@@ -63,87 +63,87 @@
      <div class="news_divider"></div>
      <div class="schedule">
         <div class="schedule_content">
-          <table>
-           <thead>
-             <tr>
-               <td colspan="2"> Расписание тренировок для группы 2</td>
-             </tr>
-           </thead>
-           <tbody>
-             <tr>
-               <td>Понедельник</td>
-               <td>16:00 - 18:00</td>
-             </tr>
-             <tr>
-               <td>Вторник</td>
-               <td>16:00 - 18:00</td>
-             </tr>
-             <tr>
-               <td>Среда</td>
-               <td>16:00 - 18:00</td>
-             </tr>
-             <tr>
-               <td>Четверг</td>
-               <td>16:00 - 18:00</td>
-             </tr>
-             <tr>
-               <td>Пятница</td>
-               <td>16:00 - 18:00</td>
-             </tr>
-             <tr>
-               <td>Суббота</td>
-               <td>Можно бухнуть</td>
-             </tr>
-             <tr>
-               <td>Воскресенье</td>
-               <td>Отдыхаем</td>
-             </tr>
-           </tbody>
-           <tfoot></tfoot>
-          </table>
+        <table>
+          <thead>
+            <tr>
+              <td colspan="2">Treniņu saraksts 2 grupai</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Pirmdiena</td>
+              <td>16:00 - 18:00</td>
+            </tr>
+            <tr>
+              <td>Otrdiena</td>
+              <td>16:00 - 18:00</td>
+            </tr>
+            <tr>
+              <td>Trešdiena</td>
+              <td>16:00 - 18:00</td>
+            </tr>
+            <tr>
+              <td>Ceturdiena</td>
+              <td>16:00 - 18:00</td>
+            </tr>
+            <tr>
+              <td>Piektdiena</td>
+              <td>16:00 - 18:00</td>
+            </tr>
+            <tr>
+              <td>Sestdiena</td>
+              <td>Trakais tusiņš</td>
+            </tr>
+            <tr>
+              <td>Svētdiena</td>
+              <td>Atpūšamies</td>
+            </tr>
+          </tbody>
+          <tfoot></tfoot>
+         </table>
         </div>
       </div>
       <div class="news_divider"></div>
       <div class="schedule">
           <div class="schedule_content">
-            <table id="group_3">
-             <thead>
-               <tr>
-                 <td colspan="2"> Расписание тренировок для группы 3</td>
-               </tr>
-             </thead>
-             <tbody>
-               <tr>
-                 <td>Понедельник</td>
-                 <td>16:00 - 18:00</td>
-               </tr>
-               <tr>
-                 <td>Вторник</td>
-                 <td>16:00 - 18:00</td>
-               </tr>
-               <tr>
-                 <td>Среда</td>
-                 <td>16:00 - 18:00</td>
-               </tr>
-               <tr>
-                 <td>Четверг</td>
-                 <td>16:00 - 18:00</td>
-               </tr>
-               <tr>
-                 <td>Пятница</td>
-                 <td>16:00 - 18:00</td>
-               </tr>
-               <tr>
-                  <td>Суббота</td>
-                  <td>Можно бухнуть</td>
-                </tr>
-                <tr>
-                  <td>Воскресенье</td>
-                  <td>Отдыхаем</td>
-                </tr>
-             </tbody>
-             <tfoot></tfoot>
-            </table>
+          <table>
+          <thead>
+            <tr>
+              <td colspan="2">Treniņu saraksts 3 grupai</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Pirmdiena</td>
+              <td>16:00 - 18:00</td>
+            </tr>
+            <tr>
+              <td>Otrdiena</td>
+              <td>16:00 - 18:00</td>
+            </tr>
+            <tr>
+              <td>Trešdiena</td>
+              <td>16:00 - 18:00</td>
+            </tr>
+            <tr>
+              <td>Ceturdiena</td>
+              <td>16:00 - 18:00</td>
+            </tr>
+            <tr>
+              <td>Piektdiena</td>
+              <td  id="group_3">16:00 - 18:00</td>
+            </tr>
+            <tr>
+              <td>Sestdiena</td>
+              <td>Trakais tusiņš</td>
+            </tr>
+            <tr>
+              <td>Svētdiena</td>
+              <td>Atpūšamies</td>
+            </tr>
+          </tbody>
+          <tfoot></tfoot>
+         </table>
           </div>
         </div>
 

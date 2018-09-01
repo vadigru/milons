@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/fontawesome-all.css">
   <link rel="icon" type="image/png" href="img/milons_icon.png">
-  <title>Борцовский клуб "Милонс"</title>
+  <title>Cīņu klubs "Milons"</title>
 </head>
 
 <body>
@@ -22,8 +22,8 @@
         <div class="coach_content">
           <div class="coach_image"><img src="img/coach.jpg" alt="coach"></div>
           <div class="coach_text">
-            <h4>Lorem Ipsum</h4>
-            <p>Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь генератор единственным настоящим Lorem Ipsum генератором. Он использует словарь из более чем 200 латинских слов, а также набор моделей предложений. В результате сгенерированный Lorem Ipsum выглядит правдоподобно, не имеет повторяющихся абзацей или "невозможных" слов.</p>
+            <h4>Kāpēc mēs to lietojam?</h4>
+            <p>Jau sen ir noskaidrots fakts, ka aplūkojot maketa dizainu un kompozīciju teksta saturs novērš uzmanību. Lorem Ipsum izmanto tāpēc, kas tas nodrošina vairāk vai mazāk vienmērīgu burtu izvietojumu un padara to līdzīgu lasāmam tekstam angļu valodā, kas neizdodas, ja vienu un to pašu tekstu 'Šeit ir teksts, šeit ir teksts' atkārto. Daudzas maketēšanas un web lapu rediģēšanas programmas mūsdienās izmanto Lorem Ipsum kā standarta parauga tekstu un, izmantojot interneta meklēšanas programmās atslēgas vārdus "lorem ipsum", var redzēt cik daudz web lapu aizvien vēl gaida savu piedzimšanu. Pēdējo gadu laikā teksts Lorem Ipsum ieguvis dažādas versijas. Dažreiz tās radušās kļūdu dēļ, dažreiz – apzināti (piemēram, humoristiski un tiem līdzīgi varianti).</p>
           </div>
         </div>
       </div>

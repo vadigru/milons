@@ -22,7 +22,7 @@
     <main>
 
     <?php
-    $query = "SELECT * FROM news ORDER by date desc";
+    $query = "SELECT * FROM news_lv ORDER by date desc";
     $result = mysqli_query($link, $query) or
         die("Ошибка " . mysqli_error($link));
     $row = mysqli_fetch_array($result);
@@ -36,7 +36,7 @@
     }
     $this_page_first_result = ($page - 1) * $results_per_page;
     $query =
-        "SELECT * FROM news ORDER by date desc LIMIT " .
+        "SELECT * FROM news_lv ORDER by date desc LIMIT " .
         $this_page_first_result .
         ',' .
         $results_per_page;

@@ -176,13 +176,13 @@ header {
               background-color: $hoverColor;
               border-radius: $radius;
             }
-            // i {
-            //   transition: rotate 0.5s ease;
-            //   -webkit-transition: rotate 0.5s ease;
-            //   -moz-transition: rotate 0.5s ease;
-            //   -ms-transition: rotate 0.5s ease;
-            //   -o-transition: rotate 0.5s ease;
-            // }
+            i {
+              transition: transform 0.5s ease;
+              -webkit-transition: transform 0.5s ease;
+              -moz-transition: transform 0.5s ease;
+              -ms-transition: transform 0.5s ease;
+              -o-transition: transform 0.5s ease;
+            }
           }
           a {
             display: block;
@@ -544,17 +544,21 @@ footer {
       height: $marginTopDesktop;
       margin: 0 auto;
       .logo {
+        max-width: $contentWidth;
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        margin: 0 auto;
         img {
           width: 80px;
           height: 80px;
+          margin-left: 20px;
         }
         span {
           position: relative;
           font-size: 2em;
           top: 0;
+          margin-right: 20px;
         }
       }
     }

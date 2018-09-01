@@ -51,9 +51,9 @@
           </li>
           <li>
             <div class="lang">
-              <div class="lang_btn"><a href="../lv/index.php" class="menu_btn"> LV </a></div>
+              <div class="lang_btn"><a href="../index.php" class="menu_btn"> LV </a></div>
               <div class="lang_btn"><a href="../en/index.php" class="menu_btn"> EN </a></div>
-              <div class="lang_btn"><a href="../index.php" class="menu_btn"> RU </a></div>
+              <div class="lang_btn"><a href="../ru/index.php" class="menu_btn"> RU </a></div>
             </div>
           </li>
         </ul>
