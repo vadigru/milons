@@ -299,6 +299,7 @@ main {
       }
     }
     .gallery_content_sml {
+      margin-top: 5px;
       .thumb {
         padding: 5px;
         img {
@@ -594,13 +595,20 @@ footer {
     }
     .gallery {
       @include content;
+
       .gallery_content {
+        background-color: #f2f2f2;
         margin: 0 auto;
+        padding: 20px;
+        border-radius: $radius;
         img {
           width: 100%;
         }
       }
       .gallery_content_sml {
+        background-color: #f2f2f2;
+        padding: 20px 20px 40px;
+        border-radius: $radius;
         .thumb {
           padding: 5px;
           img {

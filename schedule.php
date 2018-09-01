@@ -14,69 +14,8 @@
 
 <body id="group_1">
   <div class="wrapper">
-    <header>
-      <div class="bcc">
 
-        <div class="logo">
-          <a href="index.php"><img src="img/milons_logo_transp.png" class="menu_btn" alt="Wrestling Club MILONS. Борцовский клуб Милонс."></a>          <span>Борцовский клуб "Милонс"</span>
-        </div>
-
-        <div class="menu">
-          <nav>
-            <ul>
-              <li>
-                <input type="checkbox" id="club" class="menu_btn">
-                <label for="club" class="menu_btn">О клубе
-                  <i class="fas fa-angle-down menu_btn"></i>
-                </label>
-                <ul class="club_submenu">
-                  <li>
-                    <a href="club.html" class="menu_btn">Клуб</a>
-                  </li>
-                  <li>
-                    <a href="coach.html" class="menu_btn">Тренер</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="index.php" class="menu_btn">Новости</a>
-              </li>
-              <li>
-                <a href="gallery.html" class="menu_btn">Галерея</a>
-              </li>
-              <li>
-                <input type="checkbox" id="schedule" class="menu_btn">
-                <label for="schedule" class="menu_btn">Расписание
-                  <i class="fas fa-angle-down menu_btn"></i>
-                </label>
-                <ul class="schedule_submenu">
-                  <li>
-                    <a href="schedule.html#group_1" class="menu_btn">Группа 1</a>
-                  </li>
-                  <li>
-                    <a href="schedule.html#group_2" class="menu_btn">Группа 2</a>
-                  </li>
-                  <li>
-                    <a href="schedule.html#group_3" class="menu_btn">Группа 3</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="contacts.html" class="menu_btn">Контакты</a>
-              </li>
-              <li>
-                <div class="lang">
-                  <div class="lang_btn"><a href="#" class="menu_btn"> LV </a></div>
-                  <div class="lang_btn"><a href="#" class="menu_btn"> EN </a></div>
-                  <div class="lang_btn"><a href="#" class="menu_btn"> RU </a></div>
-                </div>
-              </li>
-
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
+    <?php include "blocks/header.php"; ?>
 
     <main>
      <div class="schedule">
@@ -210,22 +149,8 @@
 
     </main>
 
-    <footer>
-      <div class="footer_copy">
-        <div class="copy"><i class="far fa-copyright"></i> 2018 Борцовский клуб "Милонс"</div>
-      </div>
-      <div class="footer_contact">
-        <div class="address">
-          <i class="fas fa-map-marker-alt"></i> Елгава, ул. Узварас 12</div>
-        <div class="phone">
-          <i class="fas fa-mobile-alt"></i> +371 63 021 883</div>
-        <div class="mail">
-          <i class="far fa-envelope"></i> vladimirs.smirnovs@inbox.lv</div>
-      </div>
-      <div class="footer_social">
-        <div class="fb"><a href="https://www.facebook.com/groups/milons"> <i class="fab fa-facebook"></i></a></div>
-      </div>
-    </footer>
+    <?php include "blocks/footer.php"; ?>
+
   </div>
   <script src="js/script.js"></script>
   <script src="js/pure-swipe.min.js"></script>
