@@ -324,12 +324,17 @@ main {
             text-align: center;
             padding: 10px;
             background-color: $tableHeadLine;
+            &:hover {
+              background-color: $hoverColor;
+              color: $bodyBgColor;
+            }
           }
+
         }
         tr {
           &:hover {
             background-color: $hoverColor;
-            color: white;
+            color: $bodyBgColor;
           }
           td {
             padding: 10px;
