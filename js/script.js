@@ -4,7 +4,7 @@
   let menu = wrapper.querySelector(`.menu`);
   let club = wrapper.querySelector(`#club`);
   let scheduel = wrapper.querySelector(`#schedule`);
-  let logoSpan = document.querySelector(`.logo>span`);
+  let logoMenu = document.querySelector(`.logo .logo_menu .fas`);
   let width = document.body.offsetWidth;
 
   let menuClose = function () {
@@ -18,24 +18,23 @@
       if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         document.querySelector(`header`).style.top = `-100px`;
         document.querySelector(`.bcc`).style.backgroundColor = `rgba(255, 224, 130, 0.9)`;
+        document.querySelector(`.bcc`).style.boxShadow = `none`;
       } else {
         document.querySelector(`header`).style.top = `0`;
         document.querySelector(`.bcc`).style.backgroundColor = `rgba(255, 224, 130)`;
+        document.querySelector(`.bcc`).style.boxShadow = `0 2px 5px -4px #312783`;
       }
     }
   };
 
-  logo.addEventListener(`click`, function (evt) {
+  logo.addEventListener(`click`, function () {
     if (width <= 1024) {
-      evt.preventDefault();
       if (!menu.classList.contains(`show`)) {
         menu.classList.add(`show`);
-        logo.classList.add(`menu_btn`);
-        logoSpan.classList.add(`menu_btn`);
+        logoMenu.classList.add(`menu_btn`);
       } else {
         menu.classList.remove(`show`);
-        logo.classList.remove(`menu_btn`);
-        logoSpan.classList.remove(`menu_btn`);
+        logoMenu.classList.remove(`menu_btn`);
       }
     }
   });

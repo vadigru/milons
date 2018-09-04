@@ -25,7 +25,7 @@
           <div class="contacts_address">
             <table>
               <tr>
-                <td colspan="2">Борцовский клуб "Милонс" </td>
+                <td colspan="2"><h2>Борцовский клуб "Милонс"</h2></td>
               </tr>
               <tr>
                 <td>Тренер: </td>
@@ -53,7 +53,7 @@
         <div class="contacts_bcc">
           <div class="contacts_input">
             <form action="php/send.php" method="post">
-              <div>Есть вопрос? Спрашивай!</div>
+              <h2>Есть вопрос? Спрашивай!</h2>
               <input name="name" type="text" id="name" placeholder="Имя">
               <input name="phone" type="text" id="phone" placeholder="Телефон">
               <input name="email" type="text" id="email" placeholder="Почта">

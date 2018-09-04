@@ -25,7 +25,7 @@
           <div class="contacts_address">
             <table>
               <tr>
-                <td colspan="2">Wrestling Club MILONS </td>
+                <td colspan="2"><h2>Wrestling Club MILONS</h2> </td>
               </tr>
               <tr>
                 <td>Coach: </td>
@@ -53,7 +53,7 @@
         <div class="contacts_bcc">
           <div class="contacts_input">
             <form action="php/send.php" method="post">
-              <div>Send a message</div>
+              <h2>Send a message</h2>
               <input name="name" type="text" id="name" placeholder="Name">
               <input name="phone" type="text" id="phone" placeholder="Phone">
               <input name="email" type="text" id="email" placeholder="Email">

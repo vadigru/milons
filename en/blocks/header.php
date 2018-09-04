@@ -2,8 +2,9 @@
   <div class="bcc">
 
     <div class="logo">
-    <a href="index.php"><img src="../img/milons_logo_transp.png" class="menu_btn" alt="Wrestling Club MILONS. Борцовский клуб Милонс."></a>
-      <span>Wrestling Club MILONS</span>
+      <span class="logo_menu"><i class="fas fa-ellipsis-v"></i></span>
+      <a href="index.php" class="logo_link"><img src="../img/milons_logo_transp.png" alt="Wrestling Club MILONS. Борцовский клуб Милонс."></a>
+      <span class="klubs"><h1>Wrestling club</h1> <span class="milons"><h1>Milons</h1></span></span>
     </div>
 
     <div class="menu">

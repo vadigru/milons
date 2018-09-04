@@ -1,23 +1,23 @@
-$shadow: 0 0 5px #312783;
 $header: #ffe082;
 $contentBg: #e0e0e0;
 $footerColor: #616161;
 $bodyBgColor: #f5f5f5;
 $hoverColor: #312783;
-$radius: 3px;
 $tableLine: lighten($header, 30%);
 $tableHeadLine: lighten($header, 20%);
-$pageWidth: 1280px;
-$contentWidth: 800px;
 $pageMainHeight: calc(100vh - 180px);
 $pageMainMinHeight: calc(100vh - 200px);
 $dropMenuColor: darken($header, 10%);
+$shadow: 0 2px 5px -4px $hoverColor;
+$pageWidth: 1280px;
+$contentWidth: 800px;
 $headerHeight: 150px;
-$marginTopDesktop: 150px;
 $marginTopMobile: 70px;
+$marginTopDesktop: 150px;
 $footerHeightMobile: 180px;
 $footerHeightDesktop: 200px;
-$contentPadding: 1%;
+$contentPadding: 3%;
+$radius: 3px;
 
 @mixin content {
   max-width: $contentWidth;

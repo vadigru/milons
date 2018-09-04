@@ -1,42 +1,36 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans");
 @font-face {
   font-family: 'FontAwesome';
   src: url("../webfonts/fa-solid-900.ttf") format("truetype"); }
-@font-face {
-  font-family: 'Bookman Old Style';
-  src: url("../fonts/BOOKOS.TTF") format("truetype"); }
 body {
   margin: 0;
   padding: 0;
   background-color: #f5f5f5;
-  overflow-y: scroll; }
+  overflow-y: scroll;
+  font-family: 'Open Sans', 'Arial', sans-serif; }
+
+input,
+textarea {
+  font-family: 'Open Sans', 'Arial', sans-serif; }
 
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
-.logo > span,
-.page_number {
-  font-family: 'Bookman Old Style', 'Garamond', 'Georgia', serif; }
+h6 {
+  font-family: 'PT Sans', 'Arial', sans-serif; }
 
 h3 {
   font-style: italic;
   font-weight: 300;
   font-size: 1em; }
 
-p,
-ul,
-td,
-footer,
-.gallery_content,
-textarea {
-  font-family: 'Open Sans', 'Tahoma', 'Verdana', sans-serif; }
-
 p {
-  font-weight: 500;
-  font-size: 1em; }
+  text-indent: 1.5em; }
+
+.page_number {
+  font-weight: bold; }
 
 header {
   width: 100%;
@@ -47,29 +41,51 @@ header {
   z-index: 100; }
   header .bcc {
     background-color: #ffe082;
-    height: 70px; }
+    height: 70px;
+    box-shadow: 0 2px 5px -4px #312783; }
     header .bcc .logo {
-      font-size: 1.1em; }
-      header .bcc .logo img {
-        width: 50px;
-        height: 50px;
+      display: flex;
+      justify-content: flex-end; }
+      header .bcc .logo .logo_menu {
+        align-self: center;
+        position: absolute;
+        top: 12px;
+        left: 17px;
+        font-size: 2.2em;
+        font-weight: 800;
+        color: #312783; }
+      header .bcc .logo .logo_link {
+        order: 3; }
+        header .bcc .logo .logo_link img {
+          width: 50px;
+          height: 50px;
+          position: relative;
+          top: 10px;
+          right: 20px; }
+      header .bcc .logo .klubs {
+        align-self: center;
         position: relative;
         top: 10px;
-        left: 10px; }
-      header .bcc .logo span {
-        padding-left: 20px;
-        position: relative;
-        top: -7px;
-        color: #312783; }
+        right: 30px;
+        color: #312783;
+        font-weight: 800;
+        order: 1;
+        text-transform: uppercase; }
+        header .bcc .logo .klubs h1 {
+          font-size: 1.2em; }
+        header .bcc .logo .klubs .milons {
+          display: none;
+          color: #9d0805;
+          font-family: 'Tahoma', 'Arial', sans-serif;
+          text-transform: uppercase; }
   header .menu {
     display: none; }
     header .menu nav {
       display: block;
       margin: 0 auto;
       position: relative;
-      top: 10px;
+      top: 15px;
       left: 0;
-      font-size: 0.9em;
       font-weight: 600; }
       header .menu nav ul {
         margin: 0;
@@ -189,7 +205,7 @@ main {
   main .club,
   main .coach {
     margin: 70px 0 auto;
-    padding: 1%; }
+    padding: 3%; }
     main .club .club_content,
     main .club .coach_content,
     main .coach .club_content,
@@ -209,19 +225,18 @@ main {
         width: 250px;
         height: 250px;
         border-radius: 3px; }
-      main .club .club_content .club_text h4,
-      main .club .club_content .coach_text h4,
-      main .club .coach_content .club_text h4,
-      main .club .coach_content .coach_text h4,
-      main .coach .club_content .club_text h4,
-      main .coach .club_content .coach_text h4,
-      main .coach .coach_content .club_text h4,
-      main .coach .coach_content .coach_text h4 {
-        text-align: center;
-        font-size: 2em; }
+      main .club .club_content .club_text h2,
+      main .club .club_content .coach_text h2,
+      main .club .coach_content .club_text h2,
+      main .club .coach_content .coach_text h2,
+      main .coach .club_content .club_text h2,
+      main .coach .club_content .coach_text h2,
+      main .coach .coach_content .club_text h2,
+      main .coach .coach_content .coach_text h2 {
+        text-align: center; }
   main .news {
     margin: 0 auto;
-    padding: 1%; }
+    padding: 3%; }
     main .news .news_image {
       max-width: 400px; }
       main .news .news_image img {
@@ -241,7 +256,7 @@ main {
       display: none; }
   main .gallery {
     margin: 70px 0 auto;
-    padding: 1%; }
+    padding: 3%; }
     main .gallery .gallery_content {
       margin: 0 auto; }
       main .gallery .gallery_content img {
@@ -255,7 +270,7 @@ main {
           width: 100%;
           border-radius: 3px; }
   main .schedule {
-    padding: 1%; }
+    padding: 3%; }
     main .schedule:first-child {
       margin-top: 70px; }
     main .schedule .schedule_content table {
@@ -280,9 +295,8 @@ main {
       background-color: white; }
   main .contacts {
     margin: 70px 0 auto;
-    padding: 1%; }
+    padding: 3%; }
     main .contacts .contacts_bcc {
-      font-family: 'Tahoma', 'Verdana', sans-serif;
       display: flex;
       flex-direction: column;
       align-items: center; }
@@ -291,29 +305,22 @@ main {
         width: 100%;
         height: 300px;
         margin: 0 auto; }
-      main .contacts .contacts_bcc .contacts_address {
-        width: 100%; }
-        main .contacts .contacts_bcc .contacts_address table {
-          border-collapse: collapse;
-          width: 100%;
-          margin: auto; }
-          main .contacts .contacts_bcc .contacts_address table tr td {
-            padding: 10px; }
-        main .contacts .contacts_bcc .contacts_address tr:first-child {
-          font-weight: 600;
-          height: 30px; }
-        main .contacts .contacts_bcc .contacts_address tr:nth-child(even) {
-          background-color: white; }
-        main .contacts .contacts_bcc .contacts_address td:nth-child(odd) {
-          font-size: 0.9em; }
-        main .contacts .contacts_bcc .contacts_address td:nth-child(even) {
-          font-size: 0.8em; }
+      main .contacts .contacts_bcc .contacts_address table {
+        border-collapse: collapse;
+        width: 100%;
+        margin: auto; }
+        main .contacts .contacts_bcc .contacts_address table tr td {
+          padding: 10px; }
+      main .contacts .contacts_bcc .contacts_address tr:first-child {
+        font-weight: 600;
+        height: 30px; }
+      main .contacts .contacts_bcc .contacts_address tr:nth-child(even) {
+        background-color: white; }
   main .contacts_form .contacts_bcc .contacts_input {
     background-color: #e0e0e0;
     margin: 0 auto;
     padding: 1%; }
     main .contacts_form .contacts_bcc .contacts_input form {
-      font-family: 'Tahoma', sans-serif;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -326,9 +333,9 @@ main {
         width: 95%;
         border: none;
         border-radius: 3px;
-        font-size: 0.9em; }
+        font-size: 1em; }
         main .contacts_form .contacts_bcc .contacts_input form input:hover, main .contacts_form .contacts_bcc .contacts_input form input:active, main .contacts_form .contacts_bcc .contacts_input form input:focus {
-          box-shadow: 0 0 5px #312783;
+          box-shadow: 0 2px 5px -4px #312783;
           outline: none; }
       main .contacts_form .contacts_bcc .contacts_input form textarea {
         width: 95%;
@@ -337,17 +344,19 @@ main {
         margin-bottom: 20px;
         border: none;
         border-radius: 3px;
-        font-size: 0.9em; }
+        font-size: 1em; }
         main .contacts_form .contacts_bcc .contacts_input form textarea:hover, main .contacts_form .contacts_bcc .contacts_input form textarea:active, main .contacts_form .contacts_bcc .contacts_input form textarea:focus {
-          box-shadow: 0 0 5px #312783;
+          box-shadow: 0 2px 5px -4px #312783;
           outline: none; }
       main .contacts_form .contacts_bcc .contacts_input form #submit {
         width: 30%;
         cursor: pointer;
         background-color: white;
-        transition: all 0.5s ease; }
+        transition: all 0.5s ease;
+        font-size: 1em;
+        font-weight: bold; }
         main .contacts_form .contacts_bcc .contacts_input form #submit:hover, main .contacts_form .contacts_bcc .contacts_input form #submit:active, main .contacts_form .contacts_bcc .contacts_input form #submit:focus {
-          box-shadow: 0 0 5px #312783;
+          box-shadow: 0 2px 5px -4px #312783;
           background-color: #312783;
           color: white; }
 
@@ -356,7 +365,6 @@ main {
   justify-content: center;
   background-color: #f5f5f5; }
   .paginator .page_number {
-    font-size: 1em;
     margin: 10px 10px; }
     .paginator .page_number a {
       text-decoration: none;
@@ -398,7 +406,7 @@ footer {
     align-self: center;
     margin: 10px 0; }
     footer .footer_social .fb {
-      font-size: 2em; }
+      font-size: 2.2em; }
       footer .footer_social .fb a {
         color: #f2f2f2; }
         footer .footer_social .fb a:hover {
@@ -409,7 +417,7 @@ footer {
   clear: both;
   display: table; }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .wrapper {
     max-width: 1280px;
     margin: 0 auto; }
@@ -428,20 +436,26 @@ footer {
         align-items: center;
         justify-content: space-between;
         margin: 0 auto; }
-        header .bcc .logo img {
-          width: 80px;
-          height: 80px;
-          margin-left: 20px; }
-        header .bcc .logo span {
+        header .bcc .logo .logo_menu {
+          display: none; }
+        header .bcc .logo .logo_link {
+          display: block; }
+          header .bcc .logo .logo_link img {
+            width: 80px;
+            height: 80px;
+            margin-left: 60px; }
+        header .bcc .logo .klubs {
           position: relative;
-          font-size: 2em;
-          top: 0;
-          margin-right: 20px; }
+          top: 15px;
+          margin-left: 60px; }
+          header .bcc .logo .klubs h1 {
+            font-size: 2em; }
     header .menu {
       display: flex;
       justify-content: center; }
       header .menu nav {
-        top: 20px; }
+        top: 20px;
+        font-weight: 800; }
         header .menu nav ul {
           display: flex; }
           header .menu nav ul li #schedule {
@@ -458,8 +472,7 @@ footer {
         background-color: transparent; }
 
   main {
-    min-height: calc(100vh - 200px);
-    font-size: 1.1em; }
+    min-height: calc(100vh - 200px); }
     main .club,
     main .coach {
       max-width: 800px;
@@ -507,29 +520,22 @@ footer {
         main .contacts .contacts_bcc .contacts_address {
           width: 50%;
           margin-left: 20px; }
-          main .contacts .contacts_bcc .contacts_address td:nth-child(odd) {
-            font-size: 1em; }
-          main .contacts .contacts_bcc .contacts_address td:nth-child(even) {
-            font-size: 1em; }
-    main .contacts_form {
-      font-size: 1.3em; }
-      main .contacts_form .contacts_bcc .contacts_input {
-        border-radius: 3px; }
-        main .contacts_form .contacts_bcc .contacts_input form input {
-          width: 50%;
-          font-size: 0.85em;
-          padding: 10px; }
-        main .contacts_form .contacts_bcc .contacts_input form textarea {
-          width: 50%;
-          font-size: 0.85em;
-          padding: 10px; }
+    main .contacts_form .contacts_bcc .contacts_input {
+      border-radius: 3px; }
+      main .contacts_form .contacts_bcc .contacts_input form input {
+        width: 50%;
+        padding: 10px; }
+      main .contacts_form .contacts_bcc .contacts_input form textarea {
+        width: 50%;
+        padding: 10px; }
+      main .contacts_form .contacts_bcc .contacts_input form #submit {
+        width: 15%; }
 
   .paginator {
     display: flex;
     justify-content: center;
     background-color: #f5f5f5; }
     .paginator .page_number {
-      font-size: 1.5em;
       margin: 10px 10px; }
       .paginator .page_number a {
         text-decoration: none;
@@ -556,5 +562,8 @@ footer {
       order: 0; }
     footer .footer_contact {
       order: 1; } }
+@media screen and (max-width: 1367px) {
+  main {
+    min-height: calc(100vh - 80px); } }
 
 /*# sourceMappingURL=style.css.map */

@@ -23,7 +23,7 @@
          <table>
           <thead>
             <tr>
-              <td colspan="2">The schedule of trainings for group 1</td>
+              <td colspan="2"><h2>The schedule of trainings for group 1</h2></td>
             </tr>
           </thead>
           <tbody>
@@ -66,7 +66,7 @@
         <table>
           <thead>
             <tr>
-              <td colspan="2">The schedule of trainings for group 2</td>
+              <td colspan="2"><h2>The schedule of trainings for group 2</h2></td>
             </tr>
           </thead>
           <tbody>
@@ -109,7 +109,7 @@
           <table id="group_3">
           <thead>
             <tr>
-              <td colspan="2">The schedule of trainings for group 3</td>
+              <td colspan="2"><h2>The schedule of trainings for group 3</h2></td>
             </tr>
           </thead>
           <tbody>

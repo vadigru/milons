@@ -1,12 +1,8 @@
 @import 'var.scss';
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans');
 @font-face {
   font-family: 'FontAwesome';
   src: url('../webfonts/fa-solid-900.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Bookman Old Style';
-  src: url('../fonts/BOOKOS.TTF') format('truetype');
 }
 
 body {
@@ -14,37 +10,34 @@ body {
   padding: 0;
   background-color: $bodyBgColor;
   overflow-y: scroll;
+  font-family: 'Open Sans', 'Arial', sans-serif;
 }
 
+input,
+textarea {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+}
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
-.logo > span,
-.page_number {
-  font-family: 'Bookman Old Style', 'Garamond', 'Georgia', serif;
+ {
+  font-family: 'PT Sans', 'Arial', sans-serif;
 }
-
 h3 {
   font-style: italic;
   font-weight: 300;
   font-size: 1em;
 }
 
-p,
-ul,
-td,
-footer,
-.gallery_content,
-textarea {
-  font-family: 'Open Sans', 'Tahoma', 'Verdana', sans-serif;
+p {
+  text-indent: 1.5em;
 }
 
-p {
-  font-weight: 500;
-  font-size: 1em;
+.page_number {
+  font-weight: bold;
 }
 
 header {
@@ -57,20 +50,48 @@ header {
   .bcc {
     background-color: $header;
     height: $marginTopMobile;
+    box-shadow: $shadow;
     .logo {
-      font-size: 1.1em;
-      img {
-        width: 50px;
-        height: 50px;
+      display: flex;
+      justify-content: flex-end;
+      .logo_menu {
+        align-self: center;
+        position: absolute;
+        top: 12px;
+        left: 17px;
+        font-size: 2.2em;
+        font-weight: 800;
+        color: $hoverColor;
+      }
+      .logo_link {
+        order: 3;
+        img {
+          width: 50px;
+          height: 50px;
+          position: relative;
+          top: 10px;
+          right: 20px;
+        }
+      }
+      .klubs {
+        align-self: center;
         position: relative;
         top: 10px;
-        left: 10px;
-      }
-      span {
-        padding-left: 20px;
-        position: relative;
-        top: -7px;
+        right: 30px;
         color: $hoverColor;
+
+        font-weight: 800;
+        order: 1;
+        text-transform: uppercase;
+        h1 {
+          font-size: 1.2em;
+        }
+        .milons {
+          display: none;
+          color: #9d0805;
+          font-family: 'Tahoma', 'Arial', sans-serif;
+          text-transform: uppercase;
+        }
       }
     }
   }
@@ -80,9 +101,8 @@ header {
       display: block;
       margin: 0 auto;
       position: relative;
-      top: 10px;
+      top: 15px;
       left: 0;
-      font-size: 0.9em;
       font-weight: 600;
       ul {
         margin: 0;
@@ -255,16 +275,15 @@ main {
       }
       .club_text,
       .coach_text {
-        h4 {
+        h2 {
           text-align: center;
-          font-size: 2em;
         }
       }
     }
   }
   .news {
     margin: 0 auto;
-    padding: 1%;
+    padding: $contentPadding;
     .news_image {
       max-width: 400px;
       img {
@@ -329,7 +348,6 @@ main {
               color: $bodyBgColor;
             }
           }
-
         }
         tr {
           &:hover {
@@ -354,7 +372,6 @@ main {
   .contacts {
     @include contentMarginTop;
     .contacts_bcc {
-      font-family: 'Tahoma', 'Verdana', sans-serif;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -365,7 +382,6 @@ main {
         margin: 0 auto;
       }
       .contacts_address {
-        width: 100%;
         table {
           border-collapse: collapse;
           width: 100%;
@@ -383,12 +399,6 @@ main {
         tr:nth-child(even) {
           background-color: $tableLine;
         }
-        td:nth-child(odd) {
-          font-size: 0.9em;
-        }
-        td:nth-child(even) {
-          font-size: 0.8em;
-        }
       }
     }
   }
@@ -399,7 +409,6 @@ main {
         margin: 0 auto;
         padding: 1%;
         form {
-          font-family: 'Tahoma', sans-serif;
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -413,7 +422,7 @@ main {
             width: 95%;
             border: none;
             border-radius: $radius;
-            font-size: 0.9em;
+            font-size: 1em;
             &:hover,
             &:active,
             &:focus {
@@ -428,7 +437,7 @@ main {
             margin-bottom: 20px;
             border: none;
             border-radius: $radius;
-            font-size: 0.9em;
+            font-size: 1em;
             &:hover,
             &:active,
             &:focus {
@@ -441,6 +450,8 @@ main {
             cursor: pointer;
             background-color: $tableLine;
             transition: all 0.5s ease;
+            font-size: 1em;
+            font-weight: bold;
             &:hover,
             &:active,
             &:focus {
@@ -460,7 +471,6 @@ main {
   justify-content: center;
   background-color: $bodyBgColor;
   .page_number {
-    font-size: 1em;
     margin: 10px 10px;
     a {
       text-decoration: none;
@@ -512,7 +522,7 @@ footer {
     align-self: center;
     margin: 10px 0;
     .fb {
-      font-size: 2em;
+      font-size: 2.2em;
       a {
         color: #f2f2f2;
         &:hover {
@@ -529,7 +539,7 @@ footer {
   display: table;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .wrapper {
     max-width: $pageWidth;
     margin: 0 auto;
@@ -549,16 +559,24 @@ footer {
         align-items: center;
         justify-content: space-between;
         margin: 0 auto;
-        img {
-          width: 80px;
-          height: 80px;
-          margin-left: 20px;
+        .logo_menu {
+          display: none;
         }
-        span {
+        .logo_link {
+          display: block;
+          img {
+            width: 80px;
+            height: 80px;
+            margin-left: 60px;
+          }
+        }
+        .klubs {
           position: relative;
-          font-size: 2em;
-          top: 0;
-          margin-right: 20px;
+          top: 15px;
+          margin-left: 60px;
+          h1 {
+            font-size: 2em;
+          }
         }
       }
     }
@@ -567,6 +585,7 @@ footer {
       justify-content: center;
       nav {
         top: 20px;
+        font-weight: 800;
         ul {
           display: flex;
           li {
@@ -594,7 +613,6 @@ footer {
 
   main {
     min-height: $pageMainMinHeight;
-    font-size: 1.1em;
     .club,
     .coach {
       @include content;
@@ -648,30 +666,24 @@ footer {
         .contacts_address {
           width: 50%;
           margin-left: 20px;
-          td:nth-child(odd) {
-            font-size: 1em;
-          }
-          td:nth-child(even) {
-            font-size: 1em;
-          }
         }
       }
     }
     .contacts_form {
-      font-size: 1.3em;
       .contacts_bcc {
         .contacts_input {
           border-radius: $radius;
           form {
             input {
               width: 50%;
-              font-size: 0.85em;
               padding: 10px;
             }
             textarea {
               width: 50%;
-              font-size: 0.85em;
               padding: 10px;
+            }
+            #submit {
+              width: 15%;
             }
           }
         }
@@ -684,7 +696,6 @@ footer {
     justify-content: center;
     background-color: $bodyBgColor;
     .page_number {
-      font-size: 1.5em;
       margin: 10px 10px;
       a {
         text-decoration: none;
@@ -719,5 +730,11 @@ footer {
     .footer_contact {
       order: 1;
     }
+  }
+}
+
+@media screen and (max-width: 1367px) {
+  main {
+    min-height: calc(100vh - 80px);
   }
 }

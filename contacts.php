@@ -25,7 +25,7 @@
           <div class="contacts_address">
             <table>
               <tr>
-                <td colspan="2">Cīņu klubs "Milons" </td>
+                <td colspan="2"><h2>Cīņu klubs "Milons"</h2> </td>
               </tr>
               <tr>
                 <td>Treneris: </td>
@@ -53,7 +53,7 @@
         <div class="contacts_bcc">
           <div class="contacts_input">
             <form action="php/send.php" method="post">
-              <div>Uzdot jautājumu</div>
+              <h2>Uzdot jautājumu</h2>
               <input name="name" type="text" id="name" placeholder="Vārds">
               <input name="phone" type="text" id="phone" placeholder="Telefons">
               <input name="email" type="text" id="email" placeholder="E-pasts">

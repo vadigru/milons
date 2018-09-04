@@ -23,7 +23,7 @@
          <table>
           <thead>
             <tr>
-              <td colspan="2">Treniņu saraksts 1 grupai</td>
+              <td colspan="2"><h2>Treniņu saraksts 1 grupai</h2></td>
             </tr>
           </thead>
           <tbody>
@@ -66,7 +66,7 @@
         <table>
           <thead>
             <tr>
-              <td colspan="2">Treniņu saraksts 2 grupai</td>
+              <td colspan="2"><h2>Treniņu saraksts 2 grupai</h2></td>
             </tr>
           </thead>
           <tbody>
@@ -109,7 +109,7 @@
           <table>
           <thead>
             <tr>
-              <td colspan="2">Treniņu saraksts 3 grupai</td>
+              <td colspan="2"><h2>Treniņu saraksts 3 grupai</h2></td>
             </tr>
           </thead>
           <tbody>
