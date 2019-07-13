@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/fontawesome-all.css">
   <link rel="icon" type="image/png" href="img/milons_icon.png">
-  <title>Борцовский клуб "Милонс"</title>
+  <title>Cīņu klubs "Milons"</title>
 </head>
 
 <body>

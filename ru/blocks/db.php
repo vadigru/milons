@@ -1,8 +1,8 @@
 <?php
-$link = mysqli_connect(
+$link = @mysqli_connect(
     'localhost',
-    'id5756831_admin1',
-    'password1',
-    'id5756831_milonsdb'
+    'u758486942_mil',
+    'milPassword1',
+    'u758486942_mil'
 ) or die("Ошибка " . mysqli_error($link));
 ?>

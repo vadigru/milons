@@ -1,5 +1,5 @@
 <?php include "blocks/db.php"; ?>
-
+<?php include "blocks/output.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -84,9 +84,11 @@
     <?php include "blocks/footer.php"; ?>
 
   </div>
+  <script src="../js/backend.js"></script>
   <script src="../js/script.js"></script>
   <script src="../js/paginator.js"></script>
   <script src="../js/pure-swipe.min.js"></script>
+  <script src="../js/test.js"></script>
 </body>
 
 </html>

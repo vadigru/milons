@@ -82,19 +82,30 @@
     <main>
     <?php
     $link = mysqli_connect(
-      'localhost',
-      'id5756831_admin1',
-      'password1',
-      'id5756831_milonsdb'
+        'localhost',
+        'id5756831_admin1',
+        'password1',
+        'id5756831_milonsdb'
     ) or die("Ошибка " . mysqli_error($link));
 
     $query = "SELECT * FROM news";
     $result = mysqli_query($link, $query) or
-      die("Ошибка " . mysqli_error($link));
+        die("Ошибка " . mysqli_error($link));
     $row = mysqli_fetch_assoc($result);
-    ?>
+
+    $data = array(); // в этот массив запишем то, что выберем из базы
+    $ta = mysql_query("select * from news"); // сделаем запрос в БД
+    while ($row = mysql_fetch_assoc($ta)) {
+        // оформим каждую строку результата
+        // как ассоциативный массив
+        $data[] = $row; // допишем строку из выборки как новый элемент результирующего массива
+    }
+    echo json_encode($data); // и отдаём как json
+
+// и отдаём как json
+?>
     <?php if ($result) {
-      do { ?>
+        do { ?>
       <article class="news clearfix">
 
         <h1>
